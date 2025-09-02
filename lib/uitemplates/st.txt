@@ -1,0 +1,14 @@
+// name: st
+<style>
+  md-toast.notification-warn {
+    border-width: 24px;
+    border-color: darkorange;
+  }
+  md-toast.notification-warn > h3 {
+    background-color: orange;
+  }
+  md-toast.notification-warn > div {
+    background: rgba(245, 173, 66, 0.5);
+    color: darkorange;
+  }
+</style>

@@ -1,0 +1,5 @@
+// name: Безымянный template
+// format: handlebars
+// output: str
+// syntax: mustache
+<img width="320px" height="200px" src="data:image/jpg;base64,{{{payload}}}">

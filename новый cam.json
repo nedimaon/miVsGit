@@ -1,0 +1,242 @@
+[
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/connect:?ot=2&oid=",
+        "label": "connect"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/recordswitch?ot=2&oid=",
+        "label": "recordswitch"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/alert?ot=2&oid=",
+        "label": "alert"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/record?ot=2&oid=",
+        "label": "record"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/recordstop?ot=2&oid=",
+        "label": "recordstop"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/recordstop?ot=2&oid=",
+        "label": "recordstop"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/ping?ot=2&oid=",
+        "label": "ping"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/allon?ot=2&oid=",
+        "label": "allon"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/alloff?ot=2&oid=",
+        "label": "alloff"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/recordondetecton?ot=2&oid=",
+        "label": "recordondetecton"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/snapshot?ot=2&oid=",
+        "label": "snapshot"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/shutdown?ot=2&oid=",
+        "label": "shutdown"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/recordonalerton?ot=2&oid=",
+        "label": "recordonalerton"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/recordingoff?ot=2&oid=",
+        "label": "recordingoff"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/alerton?ot=2&oid=",
+        "label": "alerton"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/alertoff?ot=2&oid=",
+        "label": "alertoff"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/allscheduleon?ot=2&oid=",
+        "label": "allscheduleon"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/allscheduleoff?ot=2&oid=",
+        "label": "allscheduleoff"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/applyschedule?ot=2&oid=",
+        "label": "applyschedule"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/bringonline?ot=2&oid=",
+        "label": "bringonline"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/takeoffline?ot=2&oid=",
+        "label": "takeoffline"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/deleteall?ot=2&oid=",
+        "label": "deleteall"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/removeobject?ot=2&oid=",
+        "label": "removeobject"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/startlisten?ot=2&oid=",
+        "label": "startlisten"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/stoplisten?ot=2&oid=",
+        "label": "stoplisten"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/starttalk?ot=2&oid=",
+        "label": "starttalk"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/stoptalk?ot=2&oid=",
+        "label": "stoptalk"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/setmask?oid=",
+        "label": "setmask"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/executecmd?oid=",
+        "label": "executecmd"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/deletefile?oid=",
+        "label": "deletefile"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/playfile?oid=",
+        "label": "playfile"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/uploadyoutube?oid=",
+        "label": "uploadyoutube"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/addobject?oid=",
+        "label": "addobject"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/synthtocam?oid=",
+        "label": "synthtocam"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/changesetting?oid=",
+        "label": "changesetting"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/getcontentlist?oid=",
+        "label": "getcontentlist"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/getcontentcounts?oid=",
+        "label": "getcontentcounts"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/getfloorplanalerts?oid=",
+        "label": "getfloorplanalerts"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/getfloorplans?oid=",
+        "label": "getfloorplans"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/getgraph?oid=",
+        "label": "getgraph"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/graphall?oid=",
+        "label": "graphall"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/getgrabs?oid=",
+        "label": "getgrabs"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/getptzcommands?oid=",
+        "label": "getptzcommands"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/massdeletegrabs?oid=",
+        "label": "massdeletegrabs"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/massdelete?oid=",
+        "label": "massdelete"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/getobjectlist?oid=",
+        "label": "getobjectlist"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/getcontrolpanel?oid=",
+        "label": "getcontrolpanel"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/getcmdlist?oid=",
+        "label": "getcmdlist"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/previewlist?oid=",
+        "label": "previewlist"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/kinect_tilt_up?oid=",
+        "label": "kinect_tilt_up"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/kinect_tilt_down?oid=",
+        "label": "kinect_tilt_down"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/livefeed?oid=",
+        "label": "livefeed"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/togglealertmode?oid=",
+        "label": "togglealertmode"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/triggeralarm?oid=",
+        "label": "triggeralarm"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/triggerdetect?oid=",
+        "label": "triggerdetect"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/triggerplugin?oid=",
+        "label": "triggerplugin"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/video.mjpg?oid=",
+        "label": "video.mjpg"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/video.mjpg?oid=",
+        "label": "video.mjpg"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/setframerate?oid=",
+        "label": "setframerate"
+    },
+    {"dropdown": "com",
+        "value": "http://192.168.1.57:8080/setrecordingframerate?oid=",
+        "label": "setrecordingframerate"
+    }
+]

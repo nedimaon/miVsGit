@@ -1,0 +1,16 @@
+Я🏚{{{global.XATA.home1}}} {{{global.XATA.gosti}}}
+{{{global.pog.detail}}} {{{global.pog.tempc}}}℃ {{{global.pog.humidity}}}% {{{global.pog.pressure}}}hPa {{{global.pog.veter}}} {{{global.pog.windspeed}}} м/с
+Тема⚡: {{{global.dom.tema}}}
+Вент❄ х{{{global.dom.vent}}} 
+Полив🌼 {{{global.home.CTOL/poliv}}}day
+Окно🔆 {{{global.dom.okno}}}
+Утро⏰ {{{global.dom.time}}}
+🌡ТЕМПЕРАТУРА
+Комната: {{{global.home.CAB/tin}}}℃
+Улица: {{{global.dom.tout}}}℃ 
+Кухня: {{{global.dom.temp_k}}}℃ 
+Влажность: {{{global.dom.humy}}}% 
+CO: {{{global.dom.co}}} ед.
+☀ОСВЕЩЁННОСТЬ
+Кухня: {{{global.dom.lux_k}}} lux
+Прихожая: {{{global.dom.lux_c}}} lux

@@ -1,0 +1,45 @@
+var da = global.get('iXata.TEMA',"storeInFile");
+var oo = global.get('iXata.OKHO.D11_open',"storeInFile");
+var dd = da.D11_theme;
+var vv = da.D11_vent;
+if (vv == 0){
+    vv = "Off";
+}else if (vv == 1){
+    vv = 'x1';
+}else if (vv == 2){ 
+    vv = 'x2';
+}else if (vv == 3){
+    vv = 'x3';
+}else if (vv == 4){
+    vv = 0;
+}else{
+    vv = "ERROR";   
+}
+if (dd == 71){
+    dd = "OFF";
+}else if (dd == 72){    
+    dd = "RGB";
+}else if (dd == 73){    
+    dd = "LED";
+}else if (dd == 74){
+    dd = "БРА";
+}else if (dd == 76){
+    dd = "ГОСТИ";
+}else if (dd == 75){
+    dd = "OFFall";
+}else{  
+    dd = "ERROR";
+}  
+var okno; 
+if (oo == 10){
+    okno = "Открыто";
+}
+if (oo == 0){   
+    okno = "Закрыто";
+}
+msg.payload = dd;
+msg.topic = "Тема";
+global.set('XATAa.tema',dd,"storeInFile");
+global.set('XATAa.okno',okno,"storeInFile");
+global.set('XATAa.vent',vv,"storeInFile");
+return msg;

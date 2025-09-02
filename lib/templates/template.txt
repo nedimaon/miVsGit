@@ -1,0 +1,17 @@
+// name: CEHC
+// format: handlebars
+// output: str
+// syntax: mustache
+СВЕТ
+Комната: {{{global.svet_h}}} lux
+Кабинет: {{{global.svet_c}}} lux
+Кухня: {{{global.svet_k}}} lux
+
+ТЕМПЕРАТУРА
+Комната: {{{global.temp_h}}}℃
+Улица: {{{global.temp_o}}}℃
+Кухня: {{{global.temp_k}}}℃
+
+ВОЗДУХ
+Влажность: {{{global.hum_k}}}%
+Воздух: {{{global.gas}}} CO₂

@@ -1,0 +1,453 @@
+// name: a11
+// format: json
+// output: json
+// syntax: mustache
+{"System":{
+"Build":20111,
+"Git Build":"",
+"System Libraries":"ESP82xx Core 2843a5ac, NONOS SDK 2.2.2-dev(38a443e), LWIP: 2.1.2 PUYA support",
+"Plugin Count":47,
+"Plugin Description":"[Normal]",
+"Local Time":"2022-02-13 18:32:43",
+"Unit Number":5,
+"Unit Name":"ESP_K",
+"Uptime":7070,
+"Last Boot Cause":"Cold boot",
+"Reset Reason":"External System",
+"Load":18.59,
+"Load LC":3543,
+"CPU Eco Mode":"false",
+"Heap Max Free Block":11688,
+"Heap Fragmentation":14,
+"Free RAM":13624
+},
+"WiFi":{
+"Hostname":"ESP-K",
+"IP Config":"Static",
+"IP Address":"192.168.1.61",
+"IP Subnet":"255.255.255.0",
+"Gateway":"192.168.1.1",
+"STA MAC":"48:3F:DA:A3:DA:00",
+"DNS 1":"8.8.8.8",
+"DNS 2":"(IP unset)",
+"SSID":"netotnet",
+"BSSID":"9C:9D:7E:EA:0B:C2",
+"Channel":1,
+"Connected msec":424105000,
+"Last Disconnect Reason":8,
+"Last Disconnect Reason str":"(8) Assoc leave",
+"Number Reconnects":1,
+"Force WiFi B/G":"false",
+"Restart WiFi Lost Conn":"false",
+"Force WiFi No Sleep":"false",
+"Periodical send Gratuitous ARP":"false",
+"Connection Failure Threshold":0,
+"RSSI":-72
+},
+"nodes":[
+{"nr":2,
+"name":"ESP_O",
+"build":20111,
+"platform":"ESP Easy Mega",
+"ip":"192.168.1.62",
+"age":0
+},{"nr":4,
+"name":"ESP_L",
+"build":20112,
+"platform":"ESP Easy Mega",
+"ip":"192.168.1.67",
+"age":2
+},{"nr":5,
+"name":"ESP_K",
+"build":20111,
+"platform":"ESP Easy Mega",
+"ip":"192.168.1.61",
+"age":1
+},{"nr":6,
+"name":"ESP_E",
+"build":20112,
+"platform":"ESP Easy Mega",
+"ip":"192.168.1.65",
+"age":0
+},{"nr":7,
+"name":"ESP_V",
+"build":20112,
+"platform":"ESP Easy Mega",
+"ip":"192.168.1.66",
+"age":1
+},{"nr":9,
+"name":"ESP_S",
+"build":20112,
+"platform":"ESP Easy Mega",
+"ip":"192.168.1.69",
+"age":1
+},{"nr":10,
+"name":"ESP_C",
+"build":20112,
+"platform":"ESP Easy Mega",
+"ip":"192.168.1.63",
+"age":0
+}],
+"Sensors":[
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"ledoff",
+"NrDecimals":0,
+"Value":1
+},
+{"ValueNumber":2,
+"Name":"svetkyx",
+"NrDecimals":0,
+"Value":1
+},
+{"ValueNumber":3,
+"Name":"GPIO13",
+"NrDecimals":0,
+"Value":446
+},
+{"ValueNumber":4,
+"Name":"ha",
+"NrDecimals":0,
+"Value":0
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":60,
+"Type":"Generic - MQTT Import",
+"TaskName":"mqttimp3",
+"TaskDeviceNumber":37,
+"TaskEnabled":"true",
+"TaskNumber":1
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"state",
+"NrDecimals":0,
+"Value":0
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":0,
+"Type":"Switch input - Switch",
+"TaskName":"sw1",
+"TaskDeviceNumber":1,
+"TaskEnabled":"true",
+"TaskNumber":2
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"state",
+"NrDecimals":0,
+"Value":1
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":0,
+"Type":"Switch input - Switch",
+"TaskName":"rele1",
+"TaskDeviceNumber":1,
+"TaskEnabled":"true",
+"TaskNumber":3
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"Temp",
+"NrDecimals":0,
+"Value":27
+},
+{"ValueNumber":2,
+"Name":"Humi",
+"NrDecimals":0,
+"Value":36
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"true"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"true"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":60,
+"Type":"Environment - DHT11/12/22  SONOFF2301/7021",
+"TaskName":"Tkyx",
+"TaskDeviceNumber":5,
+"TaskEnabled":"true",
+"TaskNumber":4
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"state",
+"NrDecimals":0,
+"Value":0
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":0,
+"Type":"Switch input - Switch",
+"TaskName":"Shi",
+"TaskDeviceNumber":1,
+"TaskEnabled":"false",
+"TaskNumber":5
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"state",
+"NrDecimals":0,
+"Value":0
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"true"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"true"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":0,
+"Type":"Switch input - Switch",
+"TaskName":"PIRkyx",
+"TaskDeviceNumber":1,
+"TaskEnabled":"true",
+"TaskNumber":6
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"timeon",
+"NrDecimals":0,
+"Value":1
+},
+{"ValueNumber":2,
+"Name":"pwmled",
+"NrDecimals":0,
+"Value":0
+},
+{"ValueNumber":3,
+"Name":"svet",
+"NrDecimals":0,
+"Value":0
+},
+{"ValueNumber":4,
+"Name":"svkyx",
+"NrDecimals":0,
+"Value":0
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"true"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":10,
+"Type":"Generic - Dummy Device",
+"TaskName":"Dudev",
+"TaskDeviceNumber":33,
+"TaskEnabled":"true",
+"TaskNumber":7
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"state",
+"NrDecimals":0,
+"Value":0
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":0,
+"Type":"Switch input - Switch",
+"TaskName":"rele2",
+"TaskDeviceNumber":1,
+"TaskEnabled":"true",
+"TaskNumber":8
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"mot",
+"NrDecimals":0,
+"Value":0
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":0,
+"Type":"Switch input - Switch",
+"TaskName":"PirCor",
+"TaskDeviceNumber":1,
+"TaskEnabled":"false",
+"TaskNumber":9
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"state",
+"NrDecimals":0,
+"Value":0
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":0,
+"Type":"Switch input - Switch",
+"TaskName":"PIRele",
+"TaskDeviceNumber":1,
+"TaskEnabled":"false",
+"TaskNumber":10
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"vol",
+"NrDecimals":2,
+"Value":1.00
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":0,
+"Type":"Analog input - internal",
+"TaskName":"Zvuk",
+"TaskDeviceNumber":2,
+"TaskEnabled":"false",
+"TaskNumber":11
+},
+{
+"TaskValues": [
+{"ValueNumber":1,
+"Name":"State",
+"NrDecimals":0,
+"Value":0
+}],
+"DataAcquisition": [
+{"Controller":1,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":2,
+"IDX":0,
+"Enabled":"false"
+},
+{"Controller":3,
+"IDX":0,
+"Enabled":"false"
+}],
+"TaskInterval":0,
+"Type":"Switch input - Switch",
+"TaskName":"relEE",
+"TaskDeviceNumber":1,
+"TaskEnabled":"false",
+"TaskNumber":12
+}
+],
+"TTL":10000
+}

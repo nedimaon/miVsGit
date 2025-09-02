@@ -1,0 +1,37 @@
+context.global.keyboard = { messageId: msg.payload.messageId };
+
+function createRow(type, icon, rowNum) {
+  return [
+    { text: `${type} ${icon} ${rowNum}`, callback_data: `svet_${type.toLowerCase()}_${rowNum}` }
+  ];
+}
+
+const types = [
+  { name: "БРА", icon: "💡" },
+  { name: "КУХНЯ", icon: "🍳" },
+  { name: "СТОЛ", icon: "🪑" }
+];
+
+const inline_keyboard = [];
+for (let i = 1; i <= 8; i++) {
+  inline_keyboard.push(types.map(t => ({
+    text: `${t.name} ${t.icon} ${i}`,
+    callback_data: `svet_${t.name.toLowerCase()}_${i}`
+  })));
+}
+
+// Добавьте уникальный ряд, если нужно
+inline_keyboard.splice(6, 0, [
+  { text: "N11byiynuo", callback_data: "FOO11NO" },
+  { text: "1bu00", callback_data: "FOO1YES" },
+  { text: "20ubtb0", callback_data: "FOO1NO" }
+]);
+
+var opts = {
+  reply_to_message_id: msg.payload.messageId,
+  reply_markup: JSON.stringify({ inline_keyboard }),
+};
+msg.payload.content = 'Do you want to hide the inline keyboard?';
+msg.payload.options = opts;
+
+return [msg];

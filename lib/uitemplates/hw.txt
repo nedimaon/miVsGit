@@ -1,0 +1,9 @@
+// name: hw
+<script>
+var value = "hello world";
+// or overwrite value in your callback function ...
+this.scope.action = function() { return value; }
+</script>
+<md-button ng-click="send({payload:action()})">
+    Click me to send a hello world
+</md-button>

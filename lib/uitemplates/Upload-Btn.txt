@@ -1,0 +1,23 @@
+// name: Upload Btn
+
+<body>
+<button class="md-raised md-button md-ink-ripple" onclick="importData()">Upload</button>    
+
+<script>
+let restoreScope = scope;
+
+function importData() {
+  let input = document.createElement('input');
+  input.type = 'file';
+  input.id = 'restoreBtn';
+  input.onchange = _ => {
+    // you can use this method to get file and perform respective operations
+        let fReader = new FileReader();
+        fReader.readAsText(input.files[0]);
+        fReader.onloadend = function(event){
+        restoreScope.send({payload:event.target.result});}
+        };
+  input.click();
+}
+</script>
+</body>

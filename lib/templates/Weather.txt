@@ -1,0 +1,9 @@
+// name: Weather
+// format: handlebars
+// output: str
+// syntax: mustache
+Сегодня {{{global.pog.detail}}} 
+Температура {{{global.pog.tempc}}}℃ 
+Влажность {{{global.pog.humidity}}}%
+Давление {{{global.pog.pressure}}}hPa
+Ветер {{{global.veter}}} {{{global.pog.windspeed}}}мс

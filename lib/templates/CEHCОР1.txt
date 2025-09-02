@@ -1,0 +1,23 @@
+// name: CEHC
+// format: handlebars
+// output: str
+// syntax: mustache
+Сейчас я 🏚{{{global.home1}}}
+Сегодня {{{global.pog.detail}}} {{{global.pog.tempc}}} 
+Вентилятор ❄ х{{{global.toppp.xa/ESP_V/D1/vent}}} 
+Активна ⚡ Тема: {{{global.toppp.xa/ESP_V/D1/tema}
+У меня 🍸 гости: {{{global.toppp.xa/ESP_V/D1/gosti}}}
+Поливал 🌼 {{{global.toppp.xa/ESP_S/dsd/poliv}}}day назад
+⏰Продъём в {{{global.toppp.xa/ESP_A/time}}}
+
+🌡ТЕМПЕРАТУРА
+В комнате: {{{global.esp_a[0]}}}℃
+На кухне: {{{global.toppp.xa/ESP_K/Tkyx/Temp}}}℃
+За окном: {{{global.toppp.xa/ESP_W/TempOut/temp}}}℃ 
+☁ВОЗДУХ
+Влажность: {{{global.toppp.xa/ESP_K/Tkyx/Humi}}}%
+CO₂ {{{global.toppp.xa/ESP_S/gas/gas}}} ед.
+☀ОСВЕЩЁННОСТЬ
+Комнаты: {{{global.toppp.xa/ESP_L/ss/lux}}} lux
+Кухни: {{{global.toppp.xa/ESP_K/swk/lux}}} lux
+Кабинета: {{{global.esp_a[1]}}} lux

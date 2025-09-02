@@ -1,0 +1,228 @@
+[
+    {
+        "id": "062982c1a0548b83",
+        "type": "tab",
+        "label": "MQTT2UPD",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "29b5fe4dd30b1c28",
+        "type": "mqtt in",
+        "z": "062982c1a0548b83",
+        "name": "TEMA",
+        "topic": "xa/ESP/m",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "a8d25c13df59b1e1",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "ca2c84aeffdb5630"
+            ]
+        ]
+    },
+    {
+        "id": "46c2ddf5d225d802",
+        "type": "udp out",
+        "z": "062982c1a0548b83",
+        "name": "ESP-K",
+        "addr": "192.168.1.61",
+        "iface": "",
+        "port": "8266",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "false",
+        "x": 890,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "c717130f1e6ba5e2",
+        "type": "debug",
+        "z": "062982c1a0548b83",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "955c7e9d7b08f815",
+        "type": "udp out",
+        "z": "062982c1a0548b83",
+        "name": "ESP_C",
+        "addr": "192.168.1.63",
+        "iface": "",
+        "port": "8266",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "false",
+        "x": 660,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "19c98a6b4beef145",
+        "type": "udp out",
+        "z": "062982c1a0548b83",
+        "name": "ESP_S",
+        "addr": "192.168.1.69",
+        "iface": "",
+        "port": "8266",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "false",
+        "x": 640,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "af04751609fcebbe",
+        "type": "udp out",
+        "z": "062982c1a0548b83",
+        "name": "ESP_V",
+        "addr": "192.168.1.66",
+        "iface": "",
+        "port": "8266",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "false",
+        "x": 660,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "a510c412c50998c3",
+        "type": "udp out",
+        "z": "062982c1a0548b83",
+        "name": "ESP_L",
+        "addr": "192.168.1.67",
+        "iface": "",
+        "port": "8266",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "false",
+        "x": 660,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "8ffd5bb0690655e0",
+        "type": "udp out",
+        "z": "062982c1a0548b83",
+        "name": "ESP_O",
+        "addr": "192.168.1.62",
+        "iface": "",
+        "port": "8266",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "false",
+        "x": 660,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "ca2c84aeffdb5630",
+        "type": "function",
+        "z": "062982c1a0548b83",
+        "name": "pp",
+        "func": "var msg1 = { payload:\"gpio,5,1\" };\nvar msg2 = { payload:\"pwm,13,0\" };\nvar msg3 = { payload:\"gpio,16,1\" };\nvar msg4 = { payload:\"gpio,12,1\" };\nvar msg5 = { payload:\"gpio,2,1\" };\nvar msg6 = { payload:\"gpio,0,1\" };\nvar msg7 = { payload:\"gpio,4,1\" };\nvar msg8 = { payload:\"gpio,13,1\" };\nvar msg9 = { payload:\"gpio,16,0\" };\nvar msg10 = { payload:\"gpio,12,0\" };\nvar msg11 = { payload:\"gpio,2,0\" };\nvar msg12 = { payload:\"gpio,0,0\" };\nvar msg13 = { payload:\"gpio,4,0\" };\nvar msg14 = { payload:\"gpio,13,0\" };\nvar msg15 = { payload:\"gpio,5,0\" };\nvar msg16 = { payload:\"pwm,13,100\" };\nvar msg17 = { payload:\"pwm,13,500\" };\nvar msg18 = { payload:\"pwm,13,900\" };\nvar msg19 = { payload:\"pwm,13,1020\" };\nif (msg.payload === \"222\") {\nreturn [[msg1, msg2], [msg1, msg3], msg4, [msg1, msg5, msg7], [msg7, msg6], msg8];\n} else if (msg.payload === \"333\")  {\n   return [[ msg2, msg15 ], msg12, null, msg15, null, msg14];\n}\n else if (msg.payload === \"111\")  {\n  return [[ msg17, msg1 ], null, msg10, null, null];\n}",
+        "outputs": 6,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 220,
+        "wires": [
+            [
+                "c717130f1e6ba5e2",
+                "80855879763bb827"
+            ],
+            [
+                "19c98a6b4beef145",
+                "c717130f1e6ba5e2"
+            ],
+            [
+                "8ffd5bb0690655e0",
+                "c717130f1e6ba5e2"
+            ],
+            [
+                "a510c412c50998c3",
+                "c717130f1e6ba5e2"
+            ],
+            [
+                "955c7e9d7b08f815",
+                "c717130f1e6ba5e2"
+            ],
+            [
+                "af04751609fcebbe",
+                "c717130f1e6ba5e2"
+            ]
+        ]
+    },
+    {
+        "id": "80855879763bb827",
+        "type": "mqtt out",
+        "z": "062982c1a0548b83",
+        "name": "KyXH",
+        "topic": "xa/ESP_K/cmd",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a8d25c13df59b1e1",
+        "x": 610,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "a8d25c13df59b1e1",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    }
+]

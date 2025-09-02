@@ -1,0 +1,5 @@
+// name: G40
+// format: handlebars
+// output: str
+// syntax: plain
+gpio,4,0

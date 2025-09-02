@@ -1,0 +1,79 @@
+// Код для узла Function в Node-RED
+
+var jsonData = msg.payload;
+
+let newFlattenedData = {};
+//var global = this.context.global;
+
+try {
+    var unitName = jsonData.System?.["Unit Name"];
+    var unitNumber = jsonData.System?.["Unit Number"];
+    var uptime = jsonData.System?.["Uptime"];
+
+    if (!unitName) {
+        newFlattenedData['_status'] = {
+            status: 'Off',
+            reason: 'Unit Name Missing',
+            timestamp: Date.now()
+        };
+        throw new Error("Отсутствует 'Unit Name' в данных JSON. Невозможно обработать.");
+    }
+
+    // Сохраняем UnitNumber и Uptime
+    if (unitNumber !== undefined) {
+        newFlattenedData[`UnitNumber`] = unitNumber;
+    }
+    if (uptime !== undefined) {
+        newFlattenedData[`Uptime`] = uptime;
+    }
+
+    // Обработка данных из секции Sensors
+    if (jsonData.Sensors && Array.isArray(jsonData.Sensors)) {
+        jsonData.Sensors.forEach(sensor => {
+            var taskName = sensor.TaskName !== undefined && sensor.TaskName !== null ? String(sensor.TaskName) : 'UnnamedTask'; 
+            
+            if (sensor.TaskValues && Array.isArray(sensor.TaskValues)) {
+                sensor.TaskValues.forEach(taskValue => {
+                    var valueName = taskValue.Name !== undefined && taskValue.Name !== null ? String(taskValue.Name) : 'UnnamedValue';
+                    var value = taskValue.Value;   
+
+                    var key = `${taskName}_${valueName}`;
+                    newFlattenedData[key] = value;
+                });
+            }
+        });
+    }
+    // Секция 'nodes' здесь не обрабатывается и не добавляется в newFlattenedData
+
+    newFlattenedData['_status'] = {
+        status: 'On',
+        unit: unitName,
+        timestamp: Date.now(),
+        reason: null
+    };
+
+    var currentGlobalData = global.get(unitName);
+
+    if (JSON.stringify(newFlattenedData) !== JSON.stringify(currentGlobalData)) {
+        global.set(unitName, newFlattenedData);
+        node.log(`Глобальная переменная '${unitName}' обновлена из-за изменений.`);
+    } else {
+        node.log(`Глобальная переменная '${unitName}' не изменена (нет новых данных).`);
+    }
+
+    msg.payload = {
+        status: `Данные успешно обработаны и сохранены в глобальную переменную '${unitName}' (обновлено при изменении).`,
+        globalVariableName: unitName,
+        dataProcessed: newFlattenedData
+    };
+
+    return msg;
+
+} catch (error) {
+    node.error(`Ошибка при обработке JSON: ${error.message}`, msg);
+    
+    var unitNameForError = jsonData.System?.["Unit Name"] || 'UnknownUnit';
+    var currentErrorData = global.get(unitNameForError) || {};
+
+ 
+}

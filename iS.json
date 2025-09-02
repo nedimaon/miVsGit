@@ -1,0 +1,313 @@
+[
+    {
+        "dropdown": "cam",
+        "value": "1",
+        "label": "Cam OUT"
+    },
+    {
+        "dropdown": "cam",
+        "value": "4",
+        "label": "Cam IN"
+    },
+    {
+        "dropdown": "cam",
+        "value": "3",
+        "label": "Disp"
+    },
+    {
+        "dropdown": "com",
+        "value": "connect?ot=2&oid=",
+        "label": "connect"
+    },
+    {
+        "dropdown": "com",
+        "value": "recordswitch?ot=2&oid=",
+        "label": "recordswitch"
+    },
+    {
+        "dropdown": "com",
+        "value": "alert?ot=2&oid=",
+        "label": "alert"
+    },
+    {
+        "dropdown": "com",
+        "value": "record?ot=2&oid=",
+        "label": "record"
+    },
+    {
+        "dropdown": "com",
+        "value": "recordstop?ot=2&oid=",
+        "label": "recordstop"
+    },
+    {
+        "dropdown": "com",
+        "value": "ping?ot=2&oid=",
+        "label": "ping"
+    },
+    {
+        "dropdown": "com",
+        "value": "allon?ot=2&oid=",
+        "label": "allon"
+    },
+    {
+        "dropdown": "com",
+        "value": "alloff?ot=2&oid=",
+        "label": "alloff"
+    },
+    {
+        "dropdown": "com",
+        "value": "recordondetecton?ot=2&oid=",
+        "label": "recordondetecton"
+    },
+    {
+        "dropdown": "com",
+        "value": "snapshot?ot=2&oid=",
+        "label": "snapshot"
+    },
+    {
+        "dropdown": "com",
+        "value": "shutdown?ot=2&oid=",
+        "label": "shutdown"
+    },
+    {
+        "dropdown": "com",
+        "value": "recordonalerton?ot=2&oid=",
+        "label": "recordonalerton"
+    },
+    {
+        "dropdown": "com",
+        "value": "recordingoff?ot=2&oid=",
+        "label": "recordingoff"
+    },
+    {
+        "dropdown": "com",
+        "value": "alerton?ot=2&oid=",
+        "label": "alerton"
+    },
+    {
+        "dropdown": "com",
+        "value": "alertoff?ot=2&oid=",
+        "label": "alertoff"
+    },
+    {
+        "dropdown": "com",
+        "value": "allscheduleon?ot=2&oid=",
+        "label": "allscheduleon"
+    },
+    {
+        "dropdown": "com",
+        "value": "allscheduleoff?ot=2&oid=",
+        "label": "allscheduleoff"
+    },
+    {
+        "dropdown": "com",
+        "value": "applyschedule?ot=2&oid=",
+        "label": "applyschedule"
+    },
+    {
+        "dropdown": "com",
+        "value": "bringonline?ot=2&oid=",
+        "label": "bringonline"
+    },
+    {
+        "dropdown": "com",
+        "value": "takeoffline?ot=2&oid=",
+        "label": "takeoffline"
+    },
+    {
+        "dropdown": "com",
+        "value": "deleteall?ot=2&oid=",
+        "label": "deleteall"
+    },
+    {
+        "dropdown": "com",
+        "value": "removeobject?ot=2&oid=",
+        "label": "removeobject"
+    },
+    {
+        "dropdown": "com",
+        "value": "startlisten?ot=2&oid=",
+        "label": "startlisten"
+    },
+    {
+        "dropdown": "com",
+        "value": "stoplisten?ot=2&oid=",
+        "label": "stoplisten"
+    },
+    {
+        "dropdown": "com",
+        "value": "starttalk?ot=2&oid=",
+        "label": "starttalk"
+    },
+    {
+        "dropdown": "com",
+        "value": "stoptalk?ot=2&oid=",
+        "label": "stoptalk"
+    },
+    {
+        "dropdown": "com",
+        "value": "setmask?oid=",
+        "label": "setmask"
+    },
+    {
+        "dropdown": "com",
+        "value": "executecmd?oid=",
+        "label": "executecmd"
+    },
+    {
+        "dropdown": "com",
+        "value": "deletefile?oid=",
+        "label": "deletefile"
+    },
+    {
+        "dropdown": "com",
+        "value": "playfile?oid=",
+        "label": "playfile"
+    },
+    {
+        "dropdown": "com",
+        "value": "uploadyoutube?oid=",
+        "label": "uploadyoutube"
+    },
+    {
+        "dropdown": "com",
+        "value": "addobject?oid=",
+        "label": "addobject"
+    },
+    {
+        "dropdown": "com",
+        "value": "synthtocam?oid=",
+        "label": "synthtocam"
+    },
+    {
+        "dropdown": "com",
+        "value": "changesetting?oid=",
+        "label": "changesetting"
+    },
+    {
+        "dropdown": "com",
+        "value": "getcontentlist?oid=",
+        "label": "getcontentlist"
+    },
+    {
+        "dropdown": "com",
+        "value": "getcontentcounts?oid=",
+        "label": "getcontentcounts"
+    },
+    {
+        "dropdown": "com",
+        "value": "getfloorplanalerts?oid=",
+        "label": "getfloorplanalerts"
+    },
+    {
+        "dropdown": "com",
+        "value": "getfloorplans?oid=",
+        "label": "getfloorplans"
+    },
+    {
+        "dropdown": "com",
+        "value": "getgraph?oid=",
+        "label": "getgraph"
+    },
+    {
+        "dropdown": "com",
+        "value": "graphall?oid=",
+        "label": "graphall"
+    },
+    {
+        "dropdown": "com",
+        "value": "getgrabs?oid=",
+        "label": "getgrabs"
+    },
+    {
+        "dropdown": "com",
+        "value": "getptzcommands?oid=",
+        "label": "getptzcommands"
+    },
+    {
+        "dropdown": "com",
+        "value": "massdeletegrabs?oid=",
+        "label": "massdeletegrabs"
+    },
+    {
+        "dropdown": "com",
+        "value": "massdelete?oid=",
+        "label": "massdelete"
+    },
+    {
+        "dropdown": "com",
+        "value": "getobjectlist?oid=",
+        "label": "getobjectlist"
+    },
+    {
+        "dropdown": "com",
+        "value": "getcontrolpanel?oid=",
+        "label": "getcontrolpanel"
+    },
+    {
+        "dropdown": "com",
+        "value": "getcmdlist?oid=",
+        "label": "getcmdlist"
+    },
+    {
+        "dropdown": "com",
+        "value": "previewlist?oid=",
+        "label": "previewlist"
+    },
+    {
+        "dropdown": "com",
+        "value": "kinect_tilt_up?oid=",
+        "label": "kinect_tilt_up"
+    },
+    {
+        "dropdown": "com",
+        "value": "kinect_tilt_down?oid=",
+        "label": "kinect_tilt_down"
+    },
+    {
+        "dropdown": "com",
+        "value": "livefeed?oid=",
+        "label": "livefeed"
+    },
+    {
+        "dropdown": "com",
+        "value": "togglealertmode?oid=",
+        "label": "togglealertmode"
+    },
+    {
+        "dropdown": "com",
+        "value": "triggeralarm?oid=",
+        "label": "triggeralarm"
+    },
+    {
+        "dropdown": "com",
+        "value": "triggerdetect?oid=",
+        "label": "triggerdetect"
+    },
+    {
+        "dropdown": "com",
+        "value": "triggerplugin?oid=",
+        "label": "triggerplugin"
+    },
+    {
+        "dropdown": "com",
+        "value": "video.mjpg?oid=",
+        "label": "video.mjpg"
+    },
+    {
+        "dropdown": "com",
+        "value": "video.mjpg?oid=",
+        "label": "video.mjpg"
+    },
+    {
+        "dropdown": "com",
+        "value": "setframerate?oid=",
+        "label": "setframerate"
+    },
+    {
+        "dropdown": "com",
+        "value": "setrecordingframerate?oid=",
+        "label": "setrecordingframerate"
+    }
+]
+<table style="font-family:Arial;width:100%;border:1px solid #ccc;border-collapse: collapse;color:#667677;"><thead style="border:1px solid #ccc;background:#6a9ef2;color:white !important; height:50px;padding:2px;"><tr style="border:1px solid #ccc;"><th class="string">dropdown</th><th class="string">value</th><th class="string">label</th></tr></thead><tbody style=""><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">cam</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">1</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">Cam OUT</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">cam</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">4</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">Cam IN</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">cam</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">3</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">Disp</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">connect?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">connect</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">recordswitch?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">recordswitch</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">alert?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">alert</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">record?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">record</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">recordstop?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">recordstop</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">ping?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">ping</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">allon?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">allon</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">alloff?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">alloff</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">recordondetecton?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">recordondetecton</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">snapshot?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">snapshot</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">shutdown?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">shutdown</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">recordonalerton?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">recordonalerton</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">recordingoff?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">recordingoff</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">alerton?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">alerton</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">alertoff?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">alertoff</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">allscheduleon?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">allscheduleon</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">allscheduleoff?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">allscheduleoff</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">applyschedule?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">applyschedule</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">bringonline?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">bringonline</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">takeoffline?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">takeoffline</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">deleteall?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">deleteall</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">removeobject?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">removeobject</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">startlisten?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">startlisten</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">stoplisten?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">stoplisten</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">starttalk?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">starttalk</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">stoptalk?ot=2&oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">stoptalk</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">setmask?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">setmask</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">executecmd?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">executecmd</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">deletefile?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">deletefile</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">playfile?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">playfile</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">uploadyoutube?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">uploadyoutube</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">addobject?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">addobject</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">synthtocam?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">synthtocam</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">changesetting?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">changesetting</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getcontentlist?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getcontentlist</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getcontentcounts?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getcontentcounts</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getfloorplanalerts?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getfloorplanalerts</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getfloorplans?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getfloorplans</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getgraph?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getgraph</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">graphall?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">graphall</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getgrabs?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getgrabs</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getptzcommands?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getptzcommands</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">massdeletegrabs?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">massdeletegrabs</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">massdelete?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">massdelete</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getobjectlist?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getobjectlist</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getcontrolpanel?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getcontrolpanel</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getcmdlist?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">getcmdlist</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">previewlist?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">previewlist</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">kinect_tilt_up?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">kinect_tilt_up</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">kinect_tilt_down?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">kinect_tilt_down</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">livefeed?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">livefeed</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">togglealertmode?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">togglealertmode</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">triggeralarm?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">triggeralarm</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">triggerdetect?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">triggerdetect</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">triggerplugin?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">triggerplugin</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">video.mjpg?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">video.mjpg</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">video.mjpg?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">video.mjpg</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">setframerate?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">setframerate</td></tr><tr style="border:1px solid #ccc;"><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">com</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">setrecordingframerate?oid=</td><td style="border:1px solid #ccc;text-align:center;padding:3px;" class="string">setrecordingframerate</td></tr></tbody></table>

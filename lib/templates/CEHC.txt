@@ -1,0 +1,25 @@
+// name: CEHC
+// format: handlebars
+// output: str
+// syntax: mustache
+Я🏚 {{{global.home1}}}
+Погода: {{{global.pog.tempc}}}℃  {{{global.pog.detail}}}
+❄Вентилятор: х{{{global.toppp.xa/ESP_V/D1/vent}}} 
+⚡Тема: {{{global.toppp.xa/ESP_V/D1/tema}
+🍸Гости: {{{global.toppp.xa/ESP_V/D1/gosti}}}
+🌼Полив: {{{global.toppp.xa/ESP_S/dsd/poliv}}}day
+⏰Утро: {{{global.toppp.xa/ESP_A/time}}}
+
+🌡ТЕМПЕРАТУРА
+Комната: {{{global.esp_a[0]}}}℃
+Кухня: {{{global.toppp.xa/ESP_K/Tkyx/Temp}}}℃
+Улица: {{{global.toppp.xa/ESP_W/TempOut/temp}}}℃ 
+
+☁ВОЗДУХ
+Влажность: {{{global.toppp.xa/ESP_K/Tkyx/Humi}}}%
+Воздух: {{{global.toppp.xa/ESP_S/gas/gas}}} CO₂
+
+☀СВЕТ
+Комната: {{{global.toppp.xa/ESP_L/ss/lux}}} lux
+Кухня: {{{global.toppp.xa/ESP_K/swk/lux}}} lux
+Кабинет: {{{global.esp_a[1]}}} lux

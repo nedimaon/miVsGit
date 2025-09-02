@@ -1,0 +1,5 @@
+// name: G50
+// format: json
+// output: str
+// syntax: plain
+gpio,5,0

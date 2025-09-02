@@ -1,0 +1,117 @@
+{
+    {
+        "dropdown": "cam",
+        "value": "1",
+        "label": "Cam OUT"
+    },
+    {
+        "dropdown": "cam",
+        "value": "4",
+        "label": "Cam IN"
+    },
+    {
+        "dropdown": "cam",
+        "value": "3",
+        "label": "Disp"
+    },
+    {
+        "dropdown": "com",
+        "value": "connect?ot=2&oid=",
+        "label": "connect"
+    },
+    {
+        "dropdown": "com",
+        "value": "recordswitch?ot=2&oid=",
+        "label": "recordswitch"
+    },
+    {
+        "dropdown": "com",
+        "value": "alert?ot=2&oid=",
+        "label": "alert"
+    },
+    {
+        "dropdown": "com",
+        "value": "record?ot=2&oid=",
+        "label": "record"
+    },
+    {
+        "dropdown": "com",
+        "value": "recordstop?ot=2&oid=",
+        "label": "recordstop"
+    },
+    {
+        "dropdown": "com",
+        "value": "ping?ot=2&oid=",
+        "label": "ping"
+    },
+    {
+        "dropdown": "com",
+        "value": "allon?ot=2&oid=",
+        "label": "allon"
+    },
+    {
+        "dropdown": "com",
+        "value": "alloff?ot=2&oid=",
+        "label": "alloff"
+    },
+    {
+        "dropdown": "com",
+        "value": "recordondetecton?ot=2&oid=",
+        "label": "recordondetecton"
+    },
+    {
+        "dropdown": "com",
+        "value": "snapshot?ot=2&oid=",
+        "label": "snapshot"
+    },
+    {
+        "dropdown": "com",
+        "value": "shutdown?ot=2&oid=",
+        "label": "shutdown"
+    },
+    {
+        "dropdown": "com",
+        "value": "recordonalerton?ot=2&oid=",
+        "label": "recordonalerton"
+    },
+    {
+        "dropdown": "com",
+        "value": "recordingoff?ot=2&oid=",
+        "label": "recordingoff"
+    },
+    {
+        "dropdown": "com",
+        "value": "alerton?ot=2&oid=",
+        "label": "alerton"
+    },
+    {
+        "dropdown": "com",
+        "value": "alertoff?ot=2&oid=",
+        "label": "alertoff"
+    },
+    {
+        "dropdown": "com",
+        "value": "allscheduleon?ot=2&oid=",
+        "label": "allscheduleon"
+    },
+    {
+        "dropdown": "com",
+        "value": "allscheduleoff?ot=2&oid=",
+        "label": "allscheduleoff"
+    },
+    {
+        "dropdown": "com",
+        "value": "applyschedule?ot=2&oid=",
+        "label": "applyschedule"
+    },
+    {
+        "dropdown": "com",
+        "value": "bringonline?ot=2&oid=",
+        "label": "bringonline"
+    },
+    {
+        "dropdown": "com",
+        "value": "takeoffline?ot=2&oid=",
+        "label": "takeoffline"
+    }
+}

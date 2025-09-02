@@ -1,0 +1,6 @@
+// name: Кухня
+<div layout="row" layout-align="space-between">
+  <font color="{{((msg.payload || 0) % 2 === 0) ? 'green' : 'red'}}" size="36px">
+    Ķ
+  </font>
+</div>

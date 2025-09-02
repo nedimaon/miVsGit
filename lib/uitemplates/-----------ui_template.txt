@@ -1,0 +1,6 @@
+// name: Безымянный ui_template
+<div layout="row" layout-align="space-between">
+  <font color="green" size="22px">
+    {{msg.payload}}
+  </font>
+</div>

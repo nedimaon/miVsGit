@@ -1,0 +1,5 @@
+// name: g20
+// format: handlebars
+// output: str
+// syntax: mustache
+gpio,2,0

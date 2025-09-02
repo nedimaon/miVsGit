@@ -1,0 +1,9 @@
+// name: JSON template
+// format: json
+// output: json
+// syntax: mustache
+[{
+    "УЛИЦА": "{{tout}}",
+    "КОМНАТА": "{{tkom}}",
+    "КУХНЯ": "{{tkyx}}"
+}]

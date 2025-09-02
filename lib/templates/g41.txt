@@ -1,0 +1,5 @@
+// name: g41
+// format: handlebars
+// output: str
+// syntax: mustache
+gpio,4,1

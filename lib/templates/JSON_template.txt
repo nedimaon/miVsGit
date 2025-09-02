@@ -1,0 +1,8 @@
+// name: JSON template
+// format: json
+// output: json
+// syntax: mustache
+{
+    "key" : "{{topic}}",
+    "value": "{{payload}}"
+}

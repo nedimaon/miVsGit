@@ -1,0 +1,694 @@
+[
+  {
+    "id": "1526daa5-260b-473b-9d31-09639a14dcd6",
+    "type": "action.devices.types.WASHER",
+    "traits": [
+      "action.devices.traits.StartStop",
+      "action.devices.traits.RunCycle"
+    ],
+    "name": {
+      "name": "washer5",
+      "nicknames": [
+        "washer5"
+      ]
+    },
+    "willReportState": true,
+    "notificationSupportedByAgent": true,
+    "roomHint": "Playground",
+    "attributes": {
+      "availableZones": [
+        "kitchen",
+        "living room"
+      ],
+      "pausable": true,
+      "commandOnlyOnOff": false,
+      "queryOnlyOnOff": false
+    },
+    "states": {
+      "online": true,
+      "isRunning": false,
+      "isPaused": false,
+      "activeZones": [],
+      "currentRunCycle": [
+        {
+          "currentCycle": "wash",
+          "nextCycle": "rinse",
+          "lang": "en"
+        },
+        {
+          "currentCycle": "waschen",
+          "nextCycle": "spülen",
+          "lang": "de"
+        },
+        {
+          "currentCycle": "lavage",
+          "nextCycle": "rincer",
+          "lang": "fr"
+        },
+        {
+          "currentCycle": "wassen",
+          "nextCycle": "spoelen",
+          "lang": "nl"
+        },
+        {
+          "currentCycle": "vask",
+          "nextCycle": "skyll",
+          "lang": "no"
+        },
+        {
+          "currentCycle": "tvätta",
+          "nextCycle": "skölj",
+          "lang": "sv"
+        },
+        {
+          "currentCycle": "vask",
+          "nextCycle": "skyl",
+          "lang": "da"
+        },
+        {
+          "currentCycle": "洗い",
+          "nextCycle": "すすぎ",
+          "lang": "ja"
+        },
+        {
+          "currentCycle": "세탁",
+          "nextCycle": "헹굼",
+          "lang": "ko"
+        },
+        {
+          "currentCycle": "lavaggio",
+          "nextCycle": "risciacquare",
+          "lang": "it"
+        },
+        {
+          "currentCycle": "वाश",
+          "nextCycle": "रिंस",
+          "lang": "hi"
+        },
+        {
+          "currentCycle": "lavagem",
+          "nextCycle": "enxague",
+          "lang": "pt"
+        },
+        {
+          "currentCycle": "cuci cepat",
+          "nextCycle": "rinse",
+          "lang": "id"
+        },
+        {
+          "currentCycle": "ซัก",
+          "nextCycle": "ล้าง",
+          "lang": "th"
+        },
+        {
+          "currentCycle": "洗滌",
+          "nextCycle": "漂洗",
+          "lang": "zh-TW"
+        },
+        {
+          "currentCycle": "洗涤",
+          "nextCycle": "漂洗",
+          "lang": "zh-CN"
+        },
+        {
+          "currentCycle": "yıkama",
+          "nextCycle": "durulama",
+          "lang": "tr"
+        },
+        {
+          "currentCycle": "giặt đồ",
+          "nextCycle": "rửa sạch",
+          "lang": "vi"
+        },
+        {
+          "currentCycle": "стирка",
+          "nextCycle": "полоскание",
+          "lang": "ru"
+        },
+        {
+          "currentCycle": "lavado",
+          "nextCycle": "aclarado",
+          "lang": "es"
+        }
+      ],
+      "currentTotalRemainingTime": 1633,
+      "currentCycleRemainingTime": 433
+    },
+    "suv": {
+      "enabled": false,
+      "challengeType": "pinNeeded",
+      "pincode": "1234",
+      "allowRetry": false,
+      "rejectErrorCode": "pinIncorrect"
+    },
+    "notifications": {
+      "RunCycle": {
+        "priority": 0,
+        "status": "SUCCESS",
+        "currentCycleRemainingTime": 0
+      }
+    }
+  },
+  {
+    "id": "3A06DE5C-1566-4E66-9868-765B54C333AF",
+    "type": "action.devices.types.SENSOR",
+    "traits": [
+      "action.devices.traits.SensorState",
+      "action.devices.traits.EnergyStorage"
+    ],
+    "name": {
+      "name": "sensor",
+      "defaultNames": [],
+      "nicknames": []
+    },
+    "willReportState": true,
+    "notificationSupportedByAgent": true,
+    "roomHint": "Playground",
+    "attributes": {
+      "sensorStatesSupported": [
+        {
+          "name": "SmokeLevel",
+          "numericCapabilities": {
+            "rawValueUnit": "PARTS_PER_MILLION"
+          },
+          "descriptiveCapabilities": {
+            "availableStates": [
+              "smoke detected",
+              "high",
+              "no smoke detected"
+            ]
+          }
+        }
+      ],
+      "queryOnlyEnergyStorage": false,
+      "energyStorageDistanceUnitForUX": "KILOMETERS",
+      "isRechargeable": true
+    },
+    "states": {
+      "online": true,
+      "currentSensorStateData": [
+        {
+          "name": "SmokeLevel",
+          "currentSensorState": "smoke detected",
+          "rawValue": 0
+        }
+      ],
+      "descriptiveCapacityRemaining": "HIGH",
+      "isCharging": false,
+      "isPluggedIn": false,
+      "capacityRemaining": [
+        {
+          "rawValue": 90,
+          "unit": "PERCENTAGE"
+        }
+      ]
+    },
+    "suv": {
+      "enabled": false,
+      "challengeType": "pinNeeded",
+      "pincode": "1234",
+      "allowRetry": false,
+      "rejectErrorCode": "pinIncorrect"
+    },
+    "notifications": {
+      "SensorState": {
+        "priority": 0,
+        "name": "SmokeLevel",
+        "currentSensorState": "high"
+      }
+    }
+  },
+  {
+    "id": "439f56d5-a154-445b-8f24-9ca089cfe57a",
+    "type": "action.devices.types.OUTLET",
+    "traits": [
+      "action.devices.traits.OnOff"
+    ],
+    "name": {
+      "name": "outlet1",
+      "nicknames": [
+        "outlet1"
+      ]
+    },
+    "willReportState": true,
+    "roomHint": "Playground",
+    "attributes": {
+      "commandOnlyOnOff": false,
+      "queryOnlyOnOff": false
+    },
+    "states": {
+      "online": true,
+      "on": true
+    },
+    "suv": {
+      "enabled": false,
+      "challengeType": "pinNeeded",
+      "pincode": "1234",
+      "allowRetry": false,
+      "rejectErrorCode": "pinIncorrect"
+    }
+  },
+  {
+    "id": "43b29349-89d7-4b6d-96e8-df79b2c66334",
+    "type": "action.devices.types.LIGHT",
+    "traits": [
+      "action.devices.traits.OnOff",
+      "action.devices.traits.Brightness",
+      "action.devices.traits.ColorSetting",
+      "action.devices.traits.LightEffects"
+    ],
+    "name": {
+      "name": "light2",
+      "nicknames": [
+        "light2"
+      ]
+    },
+    "willReportState": true,
+    "roomHint": "Playground",
+    "attributes": {
+      "commandOnlyOnOff": false,
+      "queryOnlyOnOff": false,
+      "commandOnlyBrightness": false,
+      "commandOnlyColorSetting": false,
+      "colorModel": "rgb",
+      "colorTemperatureRange": {
+        "temperatureMinK": 2000,
+        "temperatureMaxK": 9000
+      },
+      "defaultSleepDuration": 1800,
+      "defaultWakeDuration": 1800,
+      "supportedEffects": [
+        "colorLoop",
+        "wake",
+        "sleep"
+      ]
+    },
+    "states": {
+      "online": true,
+      "on": true,
+      "brightness": 100,
+      "color": {
+        "spectrumRgb": 16711935
+      },
+      "activeLightEffect": ""
+    },
+    "suv": {
+      "enabled": false,
+      "challengeType": "pinNeeded",
+      "pincode": "1234",
+      "allowRetry": false,
+      "rejectErrorCode": "pinIncorrect"
+    }
+  },
+  {
+    "id": "589096DD-51A8-4459-9862-5D5D287EA5C5",
+    "type": "action.devices.types.WINDOW",
+    "traits": [
+      "action.devices.traits.OpenClose"
+    ],
+    "name": {
+      "name": "window",
+      "defaultNames": [],
+      "nicknames": []
+    },
+    "willReportState": true,
+    "roomHint": "Playground",
+    "attributes": {
+      "discreteOnlyOpenClose": false,
+      "openDirection": [
+        "UP",
+        "DOWN",
+        "LEFT",
+        "RIGHT"
+      ],
+      "queryOnlyOpenClose": false,
+      "commandOnlyOpenClose": false
+    },
+    "states": {
+      "online": true,
+      "openPercent": 100,
+      "targetOpenPercent": 100,
+      "openState": [
+        {
+          "openDirection": "UP",
+          "openPercent": 100,
+          "targetOpenPercent": 100
+        },
+        {
+          "openDirection": "DOWN",
+          "openPercent": 100,
+          "targetOpenPercent": 44
+        },
+        {
+          "openDirection": "LEFT",
+          "openPercent": 100,
+          "targetOpenPercent": 100
+        },
+        {
+          "openDirection": "RIGHT",
+          "openPercent": 100,
+          "targetOpenPercent": 100
+        }
+      ]
+    },
+    "suv": {
+      "enabled": false,
+      "challengeType": "pinNeeded",
+      "pincode": "1234",
+      "allowRetry": false,
+      "rejectErrorCode": "pinIncorrect"
+    }
+  },
+  {
+    "id": "AD7A08D3-AEE4-41D5-9DFC-B4B1825E8C76",
+    "type": "action.devices.types.TV",
+    "traits": [
+      "action.devices.traits.AppSelector",
+      "action.devices.traits.InputSelector",
+      "action.devices.traits.MediaState",
+      "action.devices.traits.OnOff",
+      "action.devices.traits.TransportControl",
+      "action.devices.traits.Volume"
+    ],
+    "name": {
+      "name": "tv",
+      "defaultNames": [
+        "aTV"
+      ],
+      "nicknames": [
+        "aTV"
+      ]
+    },
+    "willReportState": true,
+    "roomHint": "Playground",
+    "attributes": {
+      "availableApplications": [
+        {
+          "key": "youtube",
+          "names": [
+            {
+              "name_synonym": [
+                "youtube",
+                "YouTube US"
+              ],
+              "lang": "en"
+            },
+            {
+              "name_synonym": [
+                "youtube",
+                "YouTube DE"
+              ],
+              "lang": "de"
+            }
+          ]
+        }
+      ],
+      "availableInputs": [
+        {
+          "key": "hdmi_1",
+          "names": [
+            {
+              "lang": "en",
+              "name_synonym": [
+                "hdmi 1",
+                "1st hdmi",
+                "DVD player"
+              ]
+            },
+            {
+              "lang": "de",
+              "name_synonym": [
+                "hdmi 1",
+                "zuerst hdmi",
+                "DVD Spieler"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "usb_1",
+          "names": [
+            {
+              "lang": "en",
+              "name_synonym": [
+                "usb 1",
+                "first usb",
+                "Hard drive"
+              ]
+            },
+            {
+              "lang": "de",
+              "name_synonym": [
+                "usb 1",
+                "zuerst usb",
+                "Festplatte"
+              ]
+            }
+          ]
+        }
+      ],
+      "commandOnlyInputSelector": false,
+      "orderedInputs": false,
+      "supportActivityState": false,
+      "supportPlaybackState": false,
+      "commandOnlyOnOff": false,
+      "queryOnlyOnOff": false,
+      "transportControlSupportedCommands": [
+        "NEXT",
+        "PREVIOUS",
+        "PAUSE",
+        "STOP",
+        "RESUME"
+      ],
+      "volumeMaxLevel": 15,
+      "volumeCanMuteAndUnmute": false,
+      "levelStepSize": 6,
+      "commandOnlyVolume": false
+    },
+    "states": {
+      "online": true,
+      "currentApplication": "",
+      "currentInput": "hdmi_1",
+      "on": true,
+      "currentVolume": 4,
+      "isMuted": false
+    },
+    "suv": {
+      "enabled": false,
+      "challengeType": "pinNeeded",
+      "pincode": "1234",
+      "allowRetry": false,
+      "rejectErrorCode": "pinIncorrect"
+    }
+  },
+  {
+    "id": "BBB6DF01-59E9-4D4E-9412-D1029816D539",
+    "type": "action.devices.types.FAN",
+    "traits": [
+      "action.devices.traits.FanSpeed",
+      "action.devices.traits.OnOff"
+    ],
+    "name": {
+      "name": "fan",
+      "defaultNames": [],
+      "nicknames": [
+        "BEHT"
+      ]
+    },
+    "willReportState": true,
+    "roomHint": "Playground",
+    "attributes": {
+      "reversible": true,
+      "commandOnlyFanSpeed": false,
+      "supportsFanSpeedPercent": true,
+      "availableFanSpeeds": {
+        "speeds": [
+          {
+            "speed_name": "speed_low",
+            "speed_values": [
+              {
+                "speed_synonym": [
+                  "low",
+                  "slow"
+                ],
+                "lang": "en"
+              }
+            ]
+          },
+          {
+            "speed_name": "speed_high",
+            "speed_values": [
+              {
+                "speed_synonym": [
+                  "high",
+                  "fast"
+                ],
+                "lang": "en"
+              }
+            ]
+          }
+        ],
+        "ordered": true
+      },
+      "commandOnlyOnOff": false,
+      "queryOnlyOnOff": false
+    },
+    "states": {
+      "online": true,
+      "currentFanSpeedPercent": 71,
+      "currentFanSpeedSetting": "speed_low",
+      "on": true
+    },
+    "suv": {
+      "enabled": false,
+      "challengeType": "pinNeeded",
+      "pincode": "1234",
+      "allowRetry": false,
+      "rejectErrorCode": "pinIncorrect"
+    }
+  },
+  {
+    "id": "a07515ca-4f7f-4aa8-a2a9-abb9274e8d8b",
+    "type": "action.devices.types.AC_UNIT",
+    "traits": [
+      "action.devices.traits.OnOff",
+      "action.devices.traits.TemperatureSetting",
+      "action.devices.traits.FanSpeed"
+    ],
+    "name": {
+      "name": "ac3",
+      "nicknames": [
+        "ac3"
+      ]
+    },
+    "willReportState": true,
+    "roomHint": "Playground",
+    "attributes": {
+      "reversible": true,
+      "commandOnlyFanSpeed": false,
+      "supportsFanSpeedPercent": true,
+      "availableFanSpeeds": {
+        "speeds": [
+          {
+            "speed_name": "speed_low",
+            "speed_values": [
+              {
+                "speed_synonym": [
+                  "low",
+                  "slow"
+                ],
+                "lang": "en"
+              }
+            ]
+          },
+          {
+            "speed_name": "speed_high",
+            "speed_values": [
+              {
+                "speed_synonym": [
+                  "high",
+                  "fast"
+                ],
+                "lang": "en"
+              }
+            ]
+          }
+        ],
+        "ordered": true
+      },
+      "commandOnlyOnOff": false,
+      "queryOnlyOnOff": false,
+      "availableThermostatModes": [
+        "off",
+        "heat",
+        "cool",
+        "on"
+      ],
+      "thermostatTemperatureUnit": "C",
+      "commandOnlyTemperatureSetting": false,
+      "queryOnlyTemperatureSetting": false,
+      "bufferRangeCelsius": 2,
+      "thermostatTemperatureRange": {
+        "minThresholdCelsius": 20,
+        "maxThresholdCelsius": 30
+      },
+      "_lastThermostatMode": "heat"
+    },
+    "states": {
+      "online": true,
+      "on": true,
+      "thermostatTemperatureSetpoint": 25,
+      "thermostatTemperatureSetpointLow": 20,
+      "thermostatTemperatureSetpointHigh": 30,
+      "targetTempReachedEstimateUnixTimestampSec": 49,
+      "thermostatTemperatureAmbient": 25,
+      "thermostatHumidityAmbient": 45,
+      "activeThermostatMode": "none",
+      "thermostatMode": "off",
+      "currentFanSpeedSetting": "speed_low",
+      "currentFanSpeedPercent": 0
+    },
+    "suv": {
+      "enabled": false,
+      "challengeType": "pinNeeded",
+      "pincode": "1234",
+      "allowRetry": false,
+      "rejectErrorCode": "pinIncorrect"
+    }
+  },
+  {
+    "id": "a7685469-021b-49b7-960d-a21a840f2aee",
+    "type": "action.devices.types.BLINDS",
+    "traits": [
+      "action.devices.traits.OpenClose",
+      "action.devices.traits.Rotation"
+    ],
+    "name": {
+      "name": "blinds4",
+      "nicknames": [
+        "blinds4"
+      ]
+    },
+    "willReportState": true,
+    "roomHint": "Playground",
+    "attributes": {
+      "commandOnlyOpenClose": false,
+      "queryOnlyOpenClose": false,
+      "supportsContinuousRotation": false,
+      "commandOnlyRotation": false,
+      "openDirection": [
+        "IN",
+        "OUT"
+      ],
+      "supportsDegrees": true,
+      "supportsPercent": true,
+      "discreteOnlyOpenClose": true,
+      "rotationDegreesRange": {
+        "rotationDegreesMin": 0,
+        "rotationDegreesMax": 180
+      }
+    },
+    "states": {
+      "online": true,
+      "openState": [
+        {
+          "openDirection": "IN",
+          "openPercent": 100
+        },
+        {
+          "openDirection": "OUT",
+          "openPercent": 100
+        }
+      ],
+      "rotationPercent": 0,
+      "rotationDegrees": 0
+    },
+    "suv": {
+      "enabled": false,
+      "challengeType": "pinNeeded",
+      "pincode": "1234",
+      "allowRetry": false,
+      "rejectErrorCode": "pinIncorrect"
+    }
+  }
+]

@@ -1,0 +1,7 @@
+// name: Безымянный ui_template
+<div layout="row" layout-align="space-between">
+  <font color="{{((msg.payload || 0) % 2 === 0) ? 'green' : 'red'}}">
+    {{(msg.payload || 0) % 2 === 0 ? 'Connected' : 'Disconnected'}}
+    {{msg.topic}}
+  </font>
+</div>

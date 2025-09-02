@@ -1,0 +1,903 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"v",
+				"v3v"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Package Control Messages\n========================\n\n\nJavaScript Completions\n----------------------\n\n  JavaScript Completions Package\n  ===============================\n  \n  🎉🎉 ANNOUNCEMENT - NEW PLUGIN \"JavaScript Enhancements\" RELEASED 🎉🎉\n  =======================================================================\n  \n  I developed a new plugin with new features thanks to Flow (javascript static type checker from Facebook).\n  \n  So, I will NO LONGER SUPPORT \"JavaScript Completions\" plugin, except in particular cases. \n  I'm going to focus only on this new one!\n  \n  You can find it on: 👉👉 https://github.com/pichillilorenzo/JavaScriptEnhancements 👈👈\n  \n  This new plugin offers not only a BETTER AUTOCOMPLETE but a lot of FEATURES about creating, \n  developing and managing javascript projects, such as:\n  \n  - JavaScript real-time errors\n  - Code Refactoring\n  - Local bookmarks project\n  - Cordova projects (run cordova emulate, build, compile, serve, etc. directly from Sublime Text!)\n  - Ionic v1 and v2 (it includes also v3) projects (same as Cordova projects!)\n  - Angular v1 and v2 (it includes also v4 and v5) projects\n  - Vue projects (only about the creation at this moment)\n  - React projects (only about the creation at this moment)\n  - React Native projects (only about the creation at this moment. I will add also **NativeScript** support)\n  - Express projects (only about the creation at this moment)\n  - Yeoman generators\n  - etc.\n  \n  You could use it also in existing projects!! \n  \n  SEE the Wiki - https://github.com/pichillilorenzo/JavaScriptEnhancements/wiki\n  to get the complete list of the features that it offers!\n  \n  It will turn Sublime Text into a JavaScript IDE like!\n  =====================================================\n  \n  ## OS SUPPORTED NOW by this new plugin:\n  =======================================\n  \n  👉 Linux (64-bit)\n  👉 Mac OS X \n  👉 Windows (64-bit)\n  \n  Email me for any questions or doubts about this new project on: pichillilorenzo@gmail.com\n  \n  Thanks for your support!!!\n  \n  \n  \n  \n  How To USE \"JavaScript Completions\"\n  ===================================\n  \n  To try it, just write.\n  \n  If you like this plugin, \"Star\" it on ---> https://github.com/pichillilorenzo/JavaScript-Completions <---\n  \n  jQuery and NativeScript completions disabled by default!\n  You can enable them on Preferences -> Package Settings -> JavaScript Completions.\n  \n  Some features could use npm!\n  It will be downloaded automatically with nodejs.\n  \n  Features list:\n  - \"Find JavaScript Description\" Feature\n  - \"On Hover Description\" Feature\n  - \"Evaluate JavaScript\" Feature\n  - \"Can I use?\" Feature\n  - \"JSDoc\" Feature\n  - Context menu options\n  \n  \n  ENABLE or DISABLE completions\n  =============================\n  \n  You can ENABLE or DISABLE completions! Just go to Preferences -> Package Settings -> JavaScript Completions\n  \n  \n  \"Find JavaScript Description\" Feature\n  =====================================\n  \n  -- Supported only by Sublime Text 3 --\n  \n  You can check the description of function/property/method by selecting the word (or, in case, it will take the first word near the blinking cursor) you want find. \n  \"right-click\" on your mouse and click on \"Find JavaScript Description\".\n  It will show a popup with the list of possible descriptions or, in some case, the direct description. \n  \n  Key-Map list: Preferences -> Package Settings ->  JavaScript Completions -> Key Bindings - Default.\n  \n  \"On Hover Description\" Feature\n  ==============================\n  \n  Supported only by Sublime Text 3, Build >= 3124\n  \n  Just put the cursor over a name of a function, property or constructor and it will appear a little popup with all matching found from the \"/sublime-completions\" list enabled. \n  \n  - F = function\n  - P = property\n  - C = constructor\n  \n  \n  \"Evaluate JavaScript\" Feature\n  =============================\n  \n  -- Supported only by Sublime Text 3 --\n  \n  This feature uses node.js installed locally by this plugin.\n  \n  You can change the path of \"node.js\" and \"npm\" on Preferences -> Package Settings ->  JavaScript Completions -> Settings - Default\n  \n  You can evaluate the entire text selection or the current line! \n  If you select a text region and evaluate it, in the gutter of the editor will appear 2 white dots.\n  The first white dot represents the start of the region and the second white dot represents the end of the region.\n  You can eventually modify the region and, without reselect the same region, you can evaluate it again! \n  If you want hide this 2 dots, there is an entry on the context menu \"Evaluate JavaScript\".\n  \n  When you evaluate code, this plugin will prepend \"use strict\"; automaticaly!\n  \n  There are two main mode to evaluate code:\n  - eval, https://nodejs.org/dist/latest-v6.x/docs/api/cli.html#cli_e_eval_script\n  - print, https://nodejs.org/dist/latest-v6.x/docs/api/cli.html#cli_p_print_script\n  \n  Key-Map list: Preferences -> Package Settings ->  JavaScript Completions -> Key Bindings - Default.\n  \n  \n  \"Can I use?\" Feature\n  ====================\n  \n  Supported only by Sublime Text 3, Build >= 3124\n  \n  This feature uses \"can i use\" json data from this repository: https://github.com/Fyrd/caniuse, that contains raw data from the http://caniuse.com support tables.\n  Thanks to @Fyrd.\n  \n  You can use this feature in HTML, CSS and JavaScript context!\n  Just put the cursor on the word you want to check, \"right-click\" -> \"Can I use?\" and it will appear an input panel with all items that have a name matching with the word.\n  You can use key-map: ctrl+alt+w. Key-Map list: Preferences -> Package Settings ->  JavaScript Completions -> Key Bindings - Default.\n  After selecting an item from the list, it will appear a popup with all information from the http://caniuse.com support tables.\n  You can find it under \"Tools\" menu -> \"JavaScript Completions\" -> Search on \"Can I use\" list.\n  \n  \n  \"JSDoc\" Feature\n  ===============\n  \n  Supported only by Sublime Text 3\n  \n  Requires npm\n  \n  This feature uses https://github.com/jsdoc3/jsdoc to generate API documentation.\n  \n  You can find it under \"Tools\" menu -> \"JavaScript Completions\".\n  \n  There are 2 main menu items:\n  - Generate Documentation\n  - Add jsdoc configuration file to the current project folder\n  \n  These items can be used only with a project folder opened.\n  \"Generate Documentation\" uses the jsdoc command line to generate documentation.\n  It uses conf.json file for configuration.\n  The options (with default values) availables are:\n  {\n    \"tags\": {\n      \"allowUnknownTags\": true,\n      \"dictionaries\": [\"jsdoc\",\"closure\"]\n    },\n    \"source\": {\n      \"include\": [  ],\n      \"exclude\": [  ],\n      \"includePattern\": \".+\\\\.js(doc|x)?$\",\n      \"excludePattern\": \"(^|\\\\/|\\\\\\\\)_\"\n    },\n    \"opts\": {\n      \"template\": \"templates/default\",\n      \"encoding\": \"utf8\",\n      \"destination\": \"./out/\",\n      \"recurse\": true,\n      \"tutorials\": \"\"\n    },\n    \"plugins\": [],\n    \"templates\": {\n      \"cleverLinks\": false,\n      \"monospaceLinks\": false\n    }\n  }\n  \n  \"Add jsdoc configuration file to the current project folder\" will add a conf.json file with default values to the current project folder.\n  \n  How to use JSDoc: http://usejsdoc.org/\n  \n  \n  Context menu options\n  ====================\n  \n  Context menu options:\n  - Surround With\n  - Delete Surrounded\n  - Create Class from object literal\n  - Sort array\n  - Split string lines to variable\n  \n  ## Surround With ##\n  \n  You MUST first select text to \"enable\" these options.\n  \n  You can surround code with:\n  - if statement\n  - if else statement (this works only if you selected 2 regions)\n  - while statement\n  - do while statement\n  - for statement\n  - try catch statement\n  - try catch finally statement\n  \n  This option works also on multiple selections at once.\n  \n  ## Delete Surrounded ##\n  \n  Options are:\n  - Strip quoted string\n  \n  This option works also on multiple selections at once.\n  \n  ## Create Class from object literal ##\n  \n  This option create a JavaScript Class from an object literal (Constructor with all setter and getter for each field).\n  You can set default values or use the string \"required\" to say that a field hasn't a default value.\n  To work properly, you MUST declare a variable and assign an object literal to it, like this example:\n  \n  var Person = {\n    name: \"required\",\n    surname: \"required\",\n    email: \"\",\n    age: 18\n  }\n  \n  This option works also on multiple selections at once.\n  \n  ## Sort array ##\n  \n  Just put the cursor between brackets and will appear a menu with these options:\n  - Sort array ASC ( compare function: function(x,y){return x-y;} )\n  - Sort array DESC ( compare function: function(x,y){return y-x;} )\n  - Sort array alphabetically ASC\n  - Sort array alphabetically DESC\n  \n  This option works also on multiple selections at once.\n  \n  ## Split string lines to variable ##\n  \n  Just put the cursor between a string with multiple lines and this option will appear in the context menu.\n  It will split the string and for each line will be concatenated to a variable named \"str\".\n  This option works also on multiple selections at once.\n  \n  MIT License\n\n\nJavaScript Ultimate\n-------------------\n\n  JavaScript Ultimate is now installed!\n\n\nJavaScriptExtractFunction\n-------------------------\n\n  # Javascript Extract Function\n  \n  This is a lightweight Sublime Text 3 plugin that will extract and create a function from the highlighted text. It works in three steps:\n  \n  1. Highlight the text\n  2. Select which type of function to create\n  3. Name your function\n  \n  Your text will be wrapped into a new Javascript function, depending on what you selected and called right afterwards. You can either automatically paste the new function right in the file, or copy it to clipboard and paste it wherever you like.\n  \n  ## Usage\n  \n  To run the Javascript Extract Function command... open the Sublime Text Command Palette and type \"Extract Javascript Function.\"\n  \n  You can also right-click on a selected piece of code in a file to bring up the Context Menu and select \"Extract Javascript Function.\"\n  \n  ### Key Bindings\n  \n  The plugin adds two key bindings that you can use as shortcuts.\n  \n  * `alt + f` will ask you to select what type of function to extract your function into\n  * `shift + alt + f` will automatically extract an arrow function and paste it into your code\n  \n  ## Author\n  \n  Bogdan Lazar\n  \n  ## License\n  \n  The MIT License (MIT)\n  \n  Copyright (c) 2018 Bogdan Lazar\n",
+			"settings":
+			{
+				"buffer_size": 10501,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"package_control_message",
+					{
+						"message": "\n\nJavaScript Completions\n----------------------\n\n  JavaScript Completions Package\n  ===============================\n  \n  🎉🎉 ANNOUNCEMENT - NEW PLUGIN \"JavaScript Enhancements\" RELEASED 🎉🎉\n  =======================================================================\n  \n  I developed a new plugin with new features thanks to Flow (javascript static type checker from Facebook).\n  \n  So, I will NO LONGER SUPPORT \"JavaScript Completions\" plugin, except in particular cases. \n  I'm going to focus only on this new one!\n  \n  You can find it on: 👉👉 https://github.com/pichillilorenzo/JavaScriptEnhancements 👈👈\n  \n  This new plugin offers not only a BETTER AUTOCOMPLETE but a lot of FEATURES about creating, \n  developing and managing javascript projects, such as:\n  \n  - JavaScript real-time errors\n  - Code Refactoring\n  - Local bookmarks project\n  - Cordova projects (run cordova emulate, build, compile, serve, etc. directly from Sublime Text!)\n  - Ionic v1 and v2 (it includes also v3) projects (same as Cordova projects!)\n  - Angular v1 and v2 (it includes also v4 and v5) projects\n  - Vue projects (only about the creation at this moment)\n  - React projects (only about the creation at this moment)\n  - React Native projects (only about the creation at this moment. I will add also **NativeScript** support)\n  - Express projects (only about the creation at this moment)\n  - Yeoman generators\n  - etc.\n  \n  You could use it also in existing projects!! \n  \n  SEE the Wiki - https://github.com/pichillilorenzo/JavaScriptEnhancements/wiki\n  to get the complete list of the features that it offers!\n  \n  It will turn Sublime Text into a JavaScript IDE like!\n  =====================================================\n  \n  ## OS SUPPORTED NOW by this new plugin:\n  =======================================\n  \n  👉 Linux (64-bit)\n  👉 Mac OS X \n  👉 Windows (64-bit)\n  \n  Email me for any questions or doubts about this new project on: pichillilorenzo@gmail.com\n  \n  Thanks for your support!!!\n  \n  \n  \n  \n  How To USE \"JavaScript Completions\"\n  ===================================\n  \n  To try it, just write.\n  \n  If you like this plugin, \"Star\" it on ---> https://github.com/pichillilorenzo/JavaScript-Completions <---\n  \n  jQuery and NativeScript completions disabled by default!\n  You can enable them on Preferences -> Package Settings -> JavaScript Completions.\n  \n  Some features could use npm!\n  It will be downloaded automatically with nodejs.\n  \n  Features list:\n  - \"Find JavaScript Description\" Feature\n  - \"On Hover Description\" Feature\n  - \"Evaluate JavaScript\" Feature\n  - \"Can I use?\" Feature\n  - \"JSDoc\" Feature\n  - Context menu options\n  \n  \n  ENABLE or DISABLE completions\n  =============================\n  \n  You can ENABLE or DISABLE completions! Just go to Preferences -> Package Settings -> JavaScript Completions\n  \n  \n  \"Find JavaScript Description\" Feature\n  =====================================\n  \n  -- Supported only by Sublime Text 3 --\n  \n  You can check the description of function/property/method by selecting the word (or, in case, it will take the first word near the blinking cursor) you want find. \n  \"right-click\" on your mouse and click on \"Find JavaScript Description\".\n  It will show a popup with the list of possible descriptions or, in some case, the direct description. \n  \n  Key-Map list: Preferences -> Package Settings ->  JavaScript Completions -> Key Bindings - Default.\n  \n  \"On Hover Description\" Feature\n  ==============================\n  \n  Supported only by Sublime Text 3, Build >= 3124\n  \n  Just put the cursor over a name of a function, property or constructor and it will appear a little popup with all matching found from the \"/sublime-completions\" list enabled. \n  \n  - F = function\n  - P = property\n  - C = constructor\n  \n  \n  \"Evaluate JavaScript\" Feature\n  =============================\n  \n  -- Supported only by Sublime Text 3 --\n  \n  This feature uses node.js installed locally by this plugin.\n  \n  You can change the path of \"node.js\" and \"npm\" on Preferences -> Package Settings ->  JavaScript Completions -> Settings - Default\n  \n  You can evaluate the entire text selection or the current line! \n  If you select a text region and evaluate it, in the gutter of the editor will appear 2 white dots.\n  The first white dot represents the start of the region and the second white dot represents the end of the region.\n  You can eventually modify the region and, without reselect the same region, you can evaluate it again! \n  If you want hide this 2 dots, there is an entry on the context menu \"Evaluate JavaScript\".\n  \n  When you evaluate code, this plugin will prepend \"use strict\"; automaticaly!\n  \n  There are two main mode to evaluate code:\n  - eval, https://nodejs.org/dist/latest-v6.x/docs/api/cli.html#cli_e_eval_script\n  - print, https://nodejs.org/dist/latest-v6.x/docs/api/cli.html#cli_p_print_script\n  \n  Key-Map list: Preferences -> Package Settings ->  JavaScript Completions -> Key Bindings - Default.\n  \n  \n  \"Can I use?\" Feature\n  ====================\n  \n  Supported only by Sublime Text 3, Build >= 3124\n  \n  This feature uses \"can i use\" json data from this repository: https://github.com/Fyrd/caniuse, that contains raw data from the http://caniuse.com support tables.\n  Thanks to @Fyrd.\n  \n  You can use this feature in HTML, CSS and JavaScript context!\n  Just put the cursor on the word you want to check, \"right-click\" -> \"Can I use?\" and it will appear an input panel with all items that have a name matching with the word.\n  You can use key-map: ctrl+alt+w. Key-Map list: Preferences -> Package Settings ->  JavaScript Completions -> Key Bindings - Default.\n  After selecting an item from the list, it will appear a popup with all information from the http://caniuse.com support tables.\n  You can find it under \"Tools\" menu -> \"JavaScript Completions\" -> Search on \"Can I use\" list.\n  \n  \n  \"JSDoc\" Feature\n  ===============\n  \n  Supported only by Sublime Text 3\n  \n  Requires npm\n  \n  This feature uses https://github.com/jsdoc3/jsdoc to generate API documentation.\n  \n  You can find it under \"Tools\" menu -> \"JavaScript Completions\".\n  \n  There are 2 main menu items:\n  - Generate Documentation\n  - Add jsdoc configuration file to the current project folder\n  \n  These items can be used only with a project folder opened.\n  \"Generate Documentation\" uses the jsdoc command line to generate documentation.\n  It uses conf.json file for configuration.\n  The options (with default values) availables are:\n  {\n    \"tags\": {\n      \"allowUnknownTags\": true,\n      \"dictionaries\": [\"jsdoc\",\"closure\"]\n    },\n    \"source\": {\n      \"include\": [  ],\n      \"exclude\": [  ],\n      \"includePattern\": \".+\\\\.js(doc|x)?$\",\n      \"excludePattern\": \"(^|\\\\/|\\\\\\\\)_\"\n    },\n    \"opts\": {\n      \"template\": \"templates/default\",\n      \"encoding\": \"utf8\",\n      \"destination\": \"./out/\",\n      \"recurse\": true,\n      \"tutorials\": \"\"\n    },\n    \"plugins\": [],\n    \"templates\": {\n      \"cleverLinks\": false,\n      \"monospaceLinks\": false\n    }\n  }\n  \n  \"Add jsdoc configuration file to the current project folder\" will add a conf.json file with default values to the current project folder.\n  \n  How to use JSDoc: http://usejsdoc.org/\n  \n  \n  Context menu options\n  ====================\n  \n  Context menu options:\n  - Surround With\n  - Delete Surrounded\n  - Create Class from object literal\n  - Sort array\n  - Split string lines to variable\n  \n  ## Surround With ##\n  \n  You MUST first select text to \"enable\" these options.\n  \n  You can surround code with:\n  - if statement\n  - if else statement (this works only if you selected 2 regions)\n  - while statement\n  - do while statement\n  - for statement\n  - try catch statement\n  - try catch finally statement\n  \n  This option works also on multiple selections at once.\n  \n  ## Delete Surrounded ##\n  \n  Options are:\n  - Strip quoted string\n  \n  This option works also on multiple selections at once.\n  \n  ## Create Class from object literal ##\n  \n  This option create a JavaScript Class from an object literal (Constructor with all setter and getter for each field).\n  You can set default values or use the string \"required\" to say that a field hasn't a default value.\n  To work properly, you MUST declare a variable and assign an object literal to it, like this example:\n  \n  var Person = {\n    name: \"required\",\n    surname: \"required\",\n    email: \"\",\n    age: 18\n  }\n  \n  This option works also on multiple selections at once.\n  \n  ## Sort array ##\n  \n  Just put the cursor between brackets and will appear a menu with these options:\n  - Sort array ASC ( compare function: function(x,y){return x-y;} )\n  - Sort array DESC ( compare function: function(x,y){return y-x;} )\n  - Sort array alphabetically ASC\n  - Sort array alphabetically DESC\n  \n  This option works also on multiple selections at once.\n  \n  ## Split string lines to variable ##\n  \n  Just put the cursor between a string with multiple lines and this option will appear in the context menu.\n  It will split the string and for each line will be concatenated to a variable named \"str\".\n  This option works also on multiple selections at once.\n  \n  MIT License\n"
+					},
+					"AQAAAAAAAAAAAAAAzyMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					1,
+					"package_control_message",
+					{
+						"message": "\n\nJavaScript Ultimate\n-------------------\n\n  JavaScript Ultimate is now installed!\n"
+					},
+					"AQAAAM8jAAAAAAAAIiQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAfAAAAAAAAACDAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"package_control_message",
+					{
+						"message": "\n\nJavaScriptExtractFunction\n-------------------------\n\n  # Javascript Extract Function\n  \n  This is a lightweight Sublime Text 3 plugin that will extract and create a function from the highlighted text. It works in three steps:\n  \n  1. Highlight the text\n  2. Select which type of function to create\n  3. Name your function\n  \n  Your text will be wrapped into a new Javascript function, depending on what you selected and called right afterwards. You can either automatically paste the new function right in the file, or copy it to clipboard and paste it wherever you like.\n  \n  ## Usage\n  \n  To run the Javascript Extract Function command... open the Sublime Text Command Palette and type \"Extract Javascript Function.\"\n  \n  You can also right-click on a selected piece of code in a file to bring up the Context Menu and select \"Extract Javascript Function.\"\n  \n  ### Key Bindings\n  \n  The plugin adds two key bindings that you can use as shortcuts.\n  \n  * `alt + f` will ask you to select what type of function to extract your function into\n  * `shift + alt + f` will automatically extract an arrow function and paste it into your code\n  \n  ## Author\n  \n  Bogdan Lazar\n  \n  ## License\n  \n  The MIT License (MIT)\n  \n  Copyright (c) 2018 Bogdan Lazar\n"
+					},
+					"AQAAACIkAAAAAAAABSkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAASwAAAAAAAABiAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "/C/Users/user/AppData/Roaming/Sublime Text/Packages/JavaScript Completions/JavaScript-Completions.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 28382,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "var v1v,v2v,v3v;\nvar comm = {};\nvar ind = [];\nvar gpio = ['GPIOtoggle,',\n    'event,SingleValue',\n    'event,SingleValues',\n    '192.168.1.66',\n    '192.168.1.61',\n    '192.168.1.63',\n    '192.168.1.68',\n    '192.168.1.68',\n'event,SingleValue='];    \nvar home = global.get(\"XATAa.home1\");\nif (msg.payload == \"ON\") {\n    v3v = 100;\n    v2v = 65;\n}else if (msg.payload == \"OFF\"){\n     v3v = 0;\n     v2v = 60;\n}else{\n    v1v,v3v = msg.payload;   \n}\n\nif (msg.name == \"Ванна\") {\n    comm = [gpio[0],gpio[5],\"0\"];\n}else if (msg.name == \"Туалет\") {\n   comm = [gpio[0],gpio[5],\"4\"];\n}\nelse if (msg.name == \"Радуга\") {\n   comm = [gpio[0],gpio[4],\"5\"];\n}\nelse if (msg.name == \"Окно\") {\n      comm = [gpio[1],gpio[6],''];\n}\nelse if (msg.name == \"Бра\") {\n   comm = [gpio[0],gpio[3],\"13\"];\n}\nelse if (msg.name == \"Прихожая\") {\n   comm = [gpio[7],gpio[5],v3v];\n}\nelse if (msg.name == \"Кухня\") {\n    comm = [gpio[7],gpio[4],v3v + ',2'];\n}\nelse if (msg.name == \"Свет\") {\n     comm = [gpio[7],gpio[4],v3v + ',1'];\n}\nelse if (msg.name == \"Солнце\") {\n    comm = [gpio[0],gpio[6],\"12\"];\n}\nelse if (msg.name == \"Тема ночь\") {\n        comm = [gpio[7],gpio[3],\"71\"];\n}\nelse if (msg.name == \"Тема off\") {\n       comm = [gpio[7],gpio[3],\"75\"];\n}\nelse if (msg.name == \"Тема LED\") {\n    comm = [gpio[7],gpio[3],\"73\"];\n}\nelse if (msg.name == \"Тема RGB\") {\n    comm = [gpio[7],gpio[3],\"72\"];\n}\nelse if (msg.name == \"Тема Бра\") {\n     comm = [gpio[7],gpio[3],\"74\"];\n}\nelse if (msg.name == \"Вент\") {\n    comm = [gpio[7],gpio[3],v2v];\n}\nelse if (msg.name == \"Вход\") {\n    global.set(\"XATAa.home3\",v3v);\n}\n   msg = {\n    payload: comm[0] + comm[2],\n    ip: comm[1],\n    topic: msg.name,\n    command:msg.payload,\n    to: \"udp\"\n   }\n     msg2 = {\n    payload: 'http://' + comm[1] + '/control?cmd=' + comm[0] + comm[2],\n    ip: comm[1],\n    topic: msg.topic,\n    command:msg.command,\n    to: \"http\"\n   }\n   \n   return [msg,msg2];",
+			"file": "/D/Script/lib/functions/toUDP.js",
+			"file_size": 2056,
+			"file_write_time": 134011586532551158,
+			"redo_stack":
+			[
+				[
+					82,
+					1,
+					"insert_snippet",
+					{
+						"name": "Packages/User/1.sublime-snippet"
+					},
+					"AQAAAI8AAAAAAAAAjwAAAAAAAADsAAAAdmFyIGdwaW8gPSBbJ0dQSU90b2dnbGUsJywKICAgICAgICAnZXZlbnQsU2luZ2xlVmFsdWUnLAogICAgICAgICdldmVudCxTaW5nbGVWYWx1ZXMnLAogICAgICAgICcxOTIuMTY4LjEuNjYnLAogICAgICAgICcxOTIuMTY4LjEuNjEnLAogICAgICAgICcxOTIuMTY4LjEuNjMnLAogICAgICAgICcxOTIuMTY4LjEuNjgnLAogICAgICAgICcxOTIuMTY4LjEuNjgnLAogICAgJ2V2ZW50LFNpbmdsZVZhbHVlPSddOyAgICA",
+					"AQAAAAAAAAABAAAAewEAAAAAAAB7AQAAAAAAAAAAAAAAAPC/"
+				]
+			],
+			"settings":
+			{
+				"buffer_size": 1893,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAALkBAAAAAAAAugEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuQEAAAAAAAC5AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": "шш"
+					},
+					"AgAAALoBAAAAAAAAuwEAAAAAAAAAAAAAuwEAAAAAAAC8AQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAugEAAAAAAAC6AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					2,
+					"left_delete",
+					null,
+					"AgAAALsBAAAAAAAAuwEAAAAAAAACAAAA0Yi6AQAAAAAAALoBAAAAAAAAAgAAANGI",
+					"AQAAAAAAAAABAAAAvAEAAAAAAAC8AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": "i"
+					},
+					"AQAAALoBAAAAAAAAuwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAugEAAAAAAAC6AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"insert_completion",
+					{
+						"completion": "if",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "if"
+					},
+					"AgAAALoBAAAAAAAAugEAAAAAAAABAAAAaboBAAAAAAAAvAEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAuwEAAAAAAAC7AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAALwBAAAAAAAAvQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvAEAAAAAAAC8AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAL0BAAAAAAAAvwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvQEAAAAAAAC9AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": "v"
+					},
+					"AQAAAL4BAAAAAAAAvwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvgEAAAAAAAC+AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert_completion",
+					{
+						"completion": "v3v",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "v3v"
+					},
+					"AgAAAL4BAAAAAAAAvgEAAAAAAAABAAAAdr4BAAAAAAAAwQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAvwEAAAAAAAC/AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAMEBAAAAAAAAwgEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwQEAAAAAAADBAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"insert",
+					{
+						"characters": "=="
+					},
+					"AgAAAMIBAAAAAAAAwwEAAAAAAAAAAAAAwwEAAAAAAADEAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwgEAAAAAAADCAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAMQBAAAAAAAAxQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxAEAAAAAAADEAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAMQBAAAAAAAAxQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxAEAAAAAAADEAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					2,
+					"left_delete",
+					null,
+					"AgAAAMQBAAAAAAAAxAEAAAAAAAABAAAAIMMBAAAAAAAAwwEAAAAAAAABAAAAPQ",
+					"AQAAAAAAAAABAAAAxQEAAAAAAADFAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					23,
+					1,
+					"insert",
+					{
+						"characters": "="
+					},
+					"AQAAAMMBAAAAAAAAxAEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAwwEAAAAAAADDAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					24,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAMQBAAAAAAAAxQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxAEAAAAAAADEAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"insert",
+					{
+						"characters": "1"
+					},
+					"AQAAAMUBAAAAAAAAxgEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxQEAAAAAAADFAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					1,
+					"right_delete",
+					null,
+					"AQAAAMYBAAAAAAAAxgEAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAxgEAAAAAAADGAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					30,
+					1,
+					"insert_snippet",
+					{
+						"contents": "{$0}"
+					},
+					"AQAAAMcBAAAAAAAAyQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAxwEAAAAAAADHAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					31,
+					1,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
+					},
+					"AwAAAMgBAAAAAAAAyQEAAAAAAAAAAAAAyQEAAAAAAADKAQAAAAAAAAAAAADJAQAAAAAAAM0BAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAyAEAAAAAAADIAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"insert",
+					{
+						"characters": "v"
+					},
+					"AQAAAM0BAAAAAAAAzgEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzQEAAAAAAADNAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					1,
+					"insert",
+					{
+						"characters": "a"
+					},
+					"AQAAAM4BAAAAAAAAzwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzgEAAAAAAADOAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					34,
+					1,
+					"insert_completion",
+					{
+						"completion": "var",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "var"
+					},
+					"AgAAAM0BAAAAAAAAzQEAAAAAAAACAAAAdmHNAQAAAAAAANABAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzwEAAAAAAADPAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					35,
+					1,
+					"insert",
+					{
+						"characters": " aeg"
+					},
+					"BAAAANABAAAAAAAA0QEAAAAAAAAAAAAA0QEAAAAAAADSAQAAAAAAAAAAAADSAQAAAAAAANMBAAAAAAAAAAAAANMBAAAAAAAA1AEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0AEAAAAAAADQAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					36,
+					3,
+					"left_delete",
+					null,
+					"AwAAANMBAAAAAAAA0wEAAAAAAAABAAAAZ9IBAAAAAAAA0gEAAAAAAAABAAAAZdEBAAAAAAAA0QEAAAAAAAABAAAAYQ",
+					"AQAAAAAAAAABAAAA1AEAAAAAAADUAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					37,
+					1,
+					"left_delete",
+					null,
+					"AQAAANABAAAAAAAA0AEAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAA0QEAAAAAAADRAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					38,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAANABAAAAAAAA0QEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA0AEAAAAAAADQAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					47,
+					1,
+					"left_delete",
+					null,
+					"AQAAAPMAAAAAAAAA8wAAAAAAAAABAAAALA",
+					"AQAAAAAAAAABAAAA9AAAAAAAAAD0AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					58,
+					1,
+					"insert",
+					{
+						"characters": ","
+					},
+					"AQAAAN4AAAAAAAAA3wAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3gAAAAAAAADeAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					66,
+					1,
+					"left_delete",
+					null,
+					"AQAAALoBAAAAAAAAugEAAAAAAAAZAAAAaWYgKHYzdiA9PSAxKXsKICAgIHZhciAKfQ",
+					"AQAAAAAAAAABAAAA0wEAAAAAAAC6AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					79,
+					1,
+					"insert_snippet",
+					{
+						"name": "Packages/User/1.sublime-snippet"
+					},
+					"AgAAAC4AAAAAAAAALgAAAAAAAADIAAAAdmFyIGdwaW8gPSBbJ0dQSU90b2dnbGUsJywKICAgICdldmVudCxTaW5nbGVWYWx1ZScsCiAgICAnZXZlbnQsU2luZ2xlVmFsdWVzJywKICAgICcxOTIuMTY4LjEuNjYnLAogICAgJzE5Mi4xNjguMS42MScsCiAgICAnMTkyLjE2OC4xLjYzJywKICAgICcxOTIuMTY4LjEuNjgnLAogICAgJzE5Mi4xNjguMS42OCcsCidldmVudCxTaW5nbGVWYWx1ZT0nXTsuAAAAAAAAAPoAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALgAAAAAAAAD2AAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"contents": "",
+			"file": "/C/Users/user/AppData/Roaming/Sublime Text/Packages/CSS.sublime-package",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows",
+				"unsaved": true
+			}
+		},
+		{
+			"file": "/C/Users/user/AppData/Roaming/Sublime Text/Packages/User/1.sublime-snippet",
+			"settings":
+			{
+				"buffer_size": 278,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"insert_snippet",
+					{
+						"contents": "<snippet>\n\t<content><![CDATA[\nHello, \\${1:this} is a \\${2:snippet}.\n]]></content>\n\t<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->\n\t<!-- <tabTrigger>hello</tabTrigger> -->\n\t<!-- Optional: Set a scope to limit where the snippet will trigger -->\n\t<!-- <scope>source.python</scope> -->\n</snippet>\n"
+					},
+					"AQAAAAAAAAAAAAAAPQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"paste",
+					null,
+					"AQAAAFAAAAAAAAAAGAEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAUAAAAAAAAABQAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"left_delete",
+					null,
+					"AQAAABkBAAAAAAAAGQEAAAAAAADgAAAAPCEtLSBPcHRpb25hbDogU2V0IGEgdGFiVHJpZ2dlciB0byBkZWZpbmUgaG93IHRvIHRyaWdnZXIgdGhlIHNuaXBwZXQgLS0+Cgk8IS0tIDx0YWJUcmlnZ2VyPmhlbGxvPC90YWJUcmlnZ2VyPiAtLT4KCTwhLS0gT3B0aW9uYWw6IFNldCBhIHNjb3BlIHRvIGxpbWl0IHdoZXJlIHRoZSBzbmlwcGV0IHdpbGwgdHJpZ2dlciAtLT4KCTwhLS0gPHNjb3BlPnNvdXJjZS5weXRob248L3Njb3BlPiAtLT4",
+					"AQAAAAAAAAABAAAAGQEAAAAAAAD5AQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"cut",
+					null,
+					"AQAAAEUAAAAAAAAARQAAAAAAAAAKAAAAPC9jb250ZW50Pg",
+					"AQAAAAAAAAABAAAARQAAAAAAAABPAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"insert",
+					{
+						"characters": "11111111111"
+					},
+					"CwAAABcAAAAAAAAAGAAAAAAAAAAFAAAAQ0RBVEEYAAAAAAAAABkAAAAAAAAAAAAAABkAAAAAAAAAGgAAAAAAAAAAAAAAGgAAAAAAAAAbAAAAAAAAAAAAAAAbAAAAAAAAABwAAAAAAAAAAAAAABwAAAAAAAAAHQAAAAAAAAAAAAAAHQAAAAAAAAAeAAAAAAAAAAAAAAAeAAAAAAAAAB8AAAAAAAAAAAAAAB8AAAAAAAAAIAAAAAAAAAAAAAAAIAAAAAAAAAAhAAAAAAAAAAAAAAAhAAAAAAAAACIAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAFwAAAAAAAAAcAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					30,
+					1,
+					"paste",
+					null,
+					"AQAAABUBAAAAAAAAHwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAFQEAAAAAAAAVAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					1,
+					"left_delete",
+					null,
+					"AQAAACQAAAAAAAAAJAAAAAAAAAAVAAAASGVsbG8sICR7MTp0aGlzfSBpcyBh",
+					"AQAAAAAAAAABAAAAOQAAAAAAAAAkAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"contents": "// name: Frame grab\n// outputs: 1\n// timeout: \n// initialize: // Добавленный здесь код будет исполняться\\n// однократно при развертывании узла.\\n\n// finalize: // Добавленный здесь код будет исполняться при\\n// остановке узла или повторном развертывании.\\n\n// info: \nvar now = new Date();\n// Create formatted time\nvar yyyy = now.getFullYear();\nvar mm = now.getMonth() < 9 ? \"0\" + (now.getMonth() + 1) : (now.getMonth() + 1); // getMonth() is zero-based\nvar dd  = now.getDate() < 10 ? \"0\" + now.getDate() : now.getDate();\nvar hh = now.getHours() < 10 ? \"0\" + now.getHours() : now.getHours();\nvar mmm  = now.getMinutes() < 10 ? \"0\" + now.getMinutes() : now.getMinutes();\nvar ss  = now.getSeconds() < 10 ? \"0\" + now.getSeconds() : now.getSeconds();\n\n// Last update: \"+dd + \".\" + mm + \".\" + yyyy + \" \" + hh + \":\" + mmm + \":\" + ss});\n\n// file path with / at the end\nvar path = \"/home/pi/node-red-static/\";                     // This is the path\nvar filename = \"frame_\"+yyyy+mm+dd+\"-\"+hh+mm+ss+\".jpg\";     // file name\nmsg.payload = path + filename;                              // pass the full path to payload for the exec node to add to the end of the command\nmsg.file = filename;                                        // To be used later to store the information in the DB\nmsg.path = path;                                            // Same as above\nmsg.wwwpath = \"/\";                                          // Same as above\nmsg.topic = \"store\";                                        // Flag to store this image in the DB\nmsg.type = \"timelapse\";                                     // Image type e.g. Front camera, etc.\nmsg.epoch = now.getTime();                                  // Current timestamp\nmsg.formatteddate = dd + \".\" + mm + \".\" + yyyy + \" \" + hh + \":\" + mmm + \":\" + ss;   // Formatted timestamp to be used later\n\nreturn msg;",
+			"file": "/D/Script/lib/functions/Frame-grab.js",
+			"file_size": 1980,
+			"file_write_time": 133734874399570995,
+			"settings":
+			{
+				"buffer_size": 1839,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					14,
+					1,
+					"left_delete",
+					null,
+					"AQAAAJgEAAAAAAAAmAQAAAAAAAABAAAAOw",
+					"AQAAAAAAAAABAAAAmQQAAAAAAACZBAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert",
+					{
+						"characters": ";"
+					},
+					"AQAAAJgEAAAAAAAAmQQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAmAQAAAAAAACYBAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Snippet: 1"
+			],
+			[
+				"Snippet: ",
+				"Snippet: CDATA"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 131.199996948,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Script",
+		"/D/Script/lib",
+		"/D/Script/lib/flows",
+		"/D/Script/lib/functions",
+		"/D/Script/lib/functions/TG",
+		"/D/Script/lib/functions/WORKsc"
+	],
+	"file_history":
+	[
+		"/D/Script/lib/flows/flows.json",
+		"/C/Users/user/AppData/Roaming/Sublime Text/Packages/User/Preferences.sublime-settings",
+		"/C/Users/user/AppData/Roaming/Sublime Text/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 31.2
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"langua",
+			"\t\nlangua",
+			"\t\nlang",
+			"\t\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "D:\\Script"
+		}
+	],
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10501,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5164,
+								5164
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_indent": false,
+							"gutter": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3236.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/user/AppData/Roaming/Sublime Text/Packages/JavaScript Completions/JavaScript-Completions.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 28382,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSON/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3631.2,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Script/lib/functions/toUDP.js",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1893,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								97,
+								97
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/user/AppData/Roaming/Sublime Text/Packages/CSS.sublime-package",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/user/AppData/Roaming/Sublime Text/Packages/User/1.sublime-snippet",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 278,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								278,
+								278
+							]
+						],
+						"settings":
+						{
+							"default_extension": "sublime-snippet",
+							"syntax": "Packages/XML/XML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/D/Script/lib/functions/Frame-grab.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1839,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								76,
+								76
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.2
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.nodejs":
+	{
+		"height": 155.199996948,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 59.2
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 247.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

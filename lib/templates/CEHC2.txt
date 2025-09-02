@@ -1,0 +1,23 @@
+// name: CEHC2
+// format: handlebars
+// output: str
+// syntax: mustache
+[
+    {
+        "Комнаты": "{{{global.topp.CAB/lux}}} lux"
+"Кухни": "{{{global.topp.COOK/lux}}} lux"
+"Кабинета": "{{{global.esp_a[1]}}} lux"
+    },
+    {
+        "Room": "Bathroom Room",
+        "id": "5678",
+        "target": 19.5,
+        "current": 18
+    },
+    {
+        "Room": "Kitchen Room",
+        "id": "9101",
+        "target": 18.1,
+        "current": 17.6
+    }
+]

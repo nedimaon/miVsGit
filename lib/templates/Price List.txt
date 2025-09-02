@@ -1,0 +1,10 @@
+// name: Безымянный template
+// format: handlebars
+// output: str
+// syntax: mustache
+# Price List of {{topic}}
+
+{{! outputs list of prices }}
+{{#payload}}
+- {{name}}: {{price}}
+{{/payload}}

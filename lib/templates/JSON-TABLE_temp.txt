@@ -1,0 +1,21 @@
+// name: JSON TABLE template
+// format: json
+// output: json
+// syntax: mustache
+[
+    {
+        "Room": "Cabinet",
+        "target": "{{payload}}",
+        "current": "{{payload1}}"
+    },
+    {
+        "Room": "Bathroom Room",
+        "target": "{{payload3}}",
+        "current": "{{payload4}}"
+    },
+    {
+        "Room": "Kitchen Room",
+        "target": "{{topic}}",
+        "current": 17.6
+    }
+]

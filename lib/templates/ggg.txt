@@ -1,0 +1,22 @@
+// name: ggg
+// format: json
+// output: json
+// syntax: mustache
+{
+    "g00": "gpio,0,0",
+    "g01": "gpio,0,1",
+    "g21": "gpio,2,1",
+    "g21-3": "gpio,4,1",
+    "g21-2": "gpio,5,1",
+    "g21-4": "gpio,12,1",
+    "g21-5": "gpio,14,1",
+    "g21-6": "gpio,16,1",
+    "g20": "gpio,2,0",
+    "g20-2": "gpio,4,0",
+    "g20-3": "gpio,5,0",
+    "g20-4": "gpio,12,0",
+    "g20-5": "gpio,14,0",
+    "g20-6": "gpio,16,0",
+    "item": "",
+    "item-2": ""
+}
